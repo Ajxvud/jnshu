@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: darkgoldenrod;
+}
+
+#top{
+    width: 80%;
+    background-color: black;
+}
+#middle{
+    background-color: brown;
+}
+#bottom{
+    background-color: cyan;
+}

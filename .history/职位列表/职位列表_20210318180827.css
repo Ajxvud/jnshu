@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: darkgoldenrod;
+}
+
+#top{
+    background-color: black;
+}
+#middle{
+    background-color: brown;
+}
+#bottom{
+    background-color: cyan;
+}

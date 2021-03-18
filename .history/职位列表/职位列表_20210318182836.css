@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 60%;
+    height: 200px;
+    background-color: darkgreen;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.serviceWrap{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    
+}
+.icon{
+    
+}

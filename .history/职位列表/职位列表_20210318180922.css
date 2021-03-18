@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: darkgoldenrod;
+}
+
+#top{
+    width: 60%;
+    background-color: black;
+    height: 1200p;
+}
+#middle{
+    background-color: brown;
+}
+#bottom{
+    background-color: cyan;
+}

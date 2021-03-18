@@ -93,26 +93,7 @@ header{
     line-height: 60px;
     border-bottom: 1px solid black;
 }
-#information{
-    display: flex;
-    justify-content: space-around;
-}
-.card{
+.information{
     width: 33%;
     height: 200px;
-    background-color: blue;
-    margin: 1%;
 }
-
-
-
-
-
-
-
-
-
-
-.box:after{content:"";
-    display:block;
-    /* clear:both}           */

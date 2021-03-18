@@ -103,16 +103,3 @@ header{
     background-color: blue;
     margin: 1%;
 }
-
-
-
-
-
-
-
-
-
-
-.box:after{content:"";
-    display:block;
-    /* clear:both}           */

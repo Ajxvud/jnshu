@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #6AAC79;
+   
+}
+.serviceWrap{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+}
+.serviceWrap p{
+    float: left;
+    color: #71B581;
+    line-height: 35px;
+    margin-left: 20%;
+}
+.icon{
+    float: right;
+    margin-right: 20%;
+    line-height: 35px;
+}
+.icon > img{ 
+    vertical-align: middle;
+}

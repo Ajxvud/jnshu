@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    background-color: black;
+}
+#middle{
+    background-color: brown;
+}
+#bottom{
+    background-color: cyan;
+}

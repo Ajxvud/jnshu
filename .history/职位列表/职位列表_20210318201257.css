@@ -115,4 +115,4 @@ header{
 
 .box:after{content:"";
     display:block;
-    /* clear:both}           */
+    clear:both}          
