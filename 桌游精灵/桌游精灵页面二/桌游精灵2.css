@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(239,239,239);
+}
+@media screen and (max-width: 550px) {
+    body{
+        font-size: 80%;
+    }
+}
+header{
+    background-color: rgb(41,189,224);
+    height: 70px;
+}
+.menu{
+    width: 56px;
+    height: 56px;
+    
+    background-color: white;
+}
+.content{
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+.gameHistory{
+    
+    background-color: #fff;
+    margin: 4% 0 0 5.3%;
+    text-align: center;
+    overflow: hidden;
+}
+.gameHistory img{
+    float: right;
+    width: 10.7%;
+    overflow: hidden;
+}
+.words{
+    padding: 9% 0;
+    overflow: hidden;
+    background-color: white;
+    color: rgb(165,166,167);
+    font-size: 4vw;
+    display: inline-block;
+    margin-left: 9%;
+}
+.main{
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+.game{
+    
+    height: 70px;
+    background-color: #fff;
+    margin: 4% 0 0 5.3%;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 0.1rem solid rgb(251,225,179);
+}
+.gameType{
+    line-height: 70px;
+    font-size: 4vw;
+    color: rgb(248,190,93);
+    background-color: white;
+    border-bottom: 0.2rem solid rgb(251,225,179);  
+}
+.listcontent{
+    background-color: white;
+    margin: 0% 0 0 5.3%;
+    text-align: center;
+    overflow: hidden;
+}
+.mode{
+    margin: 4% 0;
+    text-align: center;
+    background-color: white;
+
+}
+.mode p{
+    margin: 4% 0 0;
+    color: #787878;
+    font-size: 140%;
+    background-color: white;
+}
+.btn{
+   
+    width: 80%;
+    margin: 0 10%;
+    padding: 7.8% 0;
+    text-align: center;
+    background-color: #69d1e9;
+    color: #fff;
+    font-size: 200%;
+    position: relative;
+}
+
+
+
+.go{
+    position: absolute;
+    width: 8%;
+    right: -10%;
+    top: 6%;
+}
+span{
+    background-color: #69d1e9;
+}
+
+.foot{
+    width: 100%;
+}
