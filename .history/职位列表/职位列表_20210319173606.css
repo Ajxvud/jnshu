@@ -117,8 +117,7 @@ header{
     position: absolute;
     width: 394px;
     height: 468px;
-    color: white;
-    background-color: rgba(0,0,0,0.8);
+    background-color: #3F3F3F;
 }
 .hide > p{
     text-align: center;
@@ -131,7 +130,7 @@ header{
 3. 当鼠标移到A元素身上时，看做是移动到父元素身上。（父元素获得hover状态）
 4. 再选中B元素，让其显示。
 */
- .cardHide:hover .hide{
+ #information:hover .hide{
     display: block;
 }
 .cardTop{

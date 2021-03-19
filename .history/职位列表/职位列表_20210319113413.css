@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+        /* 网页上部分 */
+header{
+    width: 100%;
+    height: 150px;
+    background-color:#1DB176;
+   
+}
+.serviceWrap{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+}
+.serviceWrap p{
+    float: left;
+    color: #71B581;
+    line-height: 35px;
+    margin-left: 20%;
+}
+.icon{
+    float: right;
+    margin-right: 20%;
+    line-height: 35px;
+}
+.icon > img{ 
+    vertical-align: middle;
+    padding: 0 5px;
+}
+.info{
+    width: 100%;
+    line-height: 115px;
+    
+}
+.info > img{
+    line-height: 115px;
+    vertical-align: middle;
+    padding-left: 20%;
+}
+.menu{
+    width: 50%;
+    float: right;
+}
+.menu ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul li{
+    line-height: 111px;
+    color: white;
+    list-style: none;
+    padding: 0 5%;
+    border-bottom: 4px solid white;
+}
+
+            /* 主体部分 */
+
+#whole{
+    background-color: #FAFAFA;
+}
+#main{
+    width: 80%;
+    height: 1550px;
+    /* background-color: #FAFAFA; */
+    margin: 0 auto;
+}
+.top{
+    width: 100%;
+    height: 60px;
+    /* background-color: cadetblue; */
+    border-bottom: 1px solid black;
+}
+.title{
+    line-height: 60px;
+}
+.title span{
+    color: #6BB078;
+}
+.contentList{
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+.contentList span{
+    line-height: 50px;
+    margin-right: 2%;
+}
+.contentList ul :nth-child(2){
+    background-color: #6BB078;
+}
+.introduction{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #d0d6d9;
+}
+
+#information{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 375px;
+    height: 600px;
+    background-color: #FFFFFF;
+    /* background-color: cornflowerblue; */
+    margin: 1%;
+    border: 1px solid #d0d6d9;
+}
+.cardTop{
+    height: 180px;
+    border-bottom: 1px solid #d0d6d9;
+}
+.cardTop :nth-child(1){
+    float: left;
+    margin-top: 20px;
+    margin-left: 11px;
+    margin-right: 8px;
+    margin-bottom: 16px;
+}
+
+.card p{
+    word-break: break-all;  
+}
+.cardTop h3{
+    padding-top: 32px;
+    padding-bottom: 18px   
+}
+.cardMiddle ul{
+    clear: both;
+}
+.cardMiddle ul li{
+    display: inline-block;
+    width: 180px;
+    padding: 11px 0;
+    padding-left: 7px;
+    font-size: 14px;
+}
+.cardMiddle ul li img{
+    padding-left: 5%;
+}
+.cardMiddle ul li strong{
+    margin-left: 8px;
+    color: red;
+}
+.liOne{
+    border-bottom: 1px solid #d0d6d9;
+    border-right: 1px solid #d0d6d9;
+}
+.liTwo{
+    border-bottom: 1px solid #d0d6d9;
+}
+.cardButtom{
+    height: 300px;
+}
+.cardButtom p{
+    text-align: center;
+    line-height: 122px;
+    width: 150px;
+    height: 122px;
+    float: left;
+    border-bottom: 1px solid #d0d6d9;
+    border-right: 1px solid #d0d6d9;
+}
+.Salary ul li{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    float: left;
+    /* border: 1px  solid #d0d6d9; */
+    border-bottom: 1px solid #d0d6d9;
+    padding-left: 14px;
+}
+.Salary ul li span{
+    float: right;
+}

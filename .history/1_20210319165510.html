@@ -1,0 +1,50 @@
+<!-- # 需求
+- 当鼠标移动到一个元素A身上时，另外一个元素B显示。
+# 实现原理
+1. A元素与B元素有一个相同的父级。(表示A与B写在同一个父元素下面，是同级的)
+2. B元素默认隐藏，A元素默认显示。
+3. 当鼠标移到A元素身上时，看做是移动到父元素身上。（父元素获得hover状态）
+4. 再选中B元素，让其显示。
+
+# 具体代码
+HTML代码： -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="father">
+        <div class="A">
+            显示
+        <div>
+        <div class="B">
+            隐藏的元素
+        </div>
+    </div>
+</body>
+</html>
+
+---------------------------------------
+
+.B {
+	display: none;
+}
+.father:hover .B {
+	display: block;
+}
+
+# 如果用styles来写：
+        
+.B {
+	display: none;
+}
+.father:hover{
+	&>.B{
+		display: block;
+	}
+}

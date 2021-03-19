@@ -2,16 +2,15 @@
     margin: 0;
     padding: 0;
 }
-body{
-    min-width: 1517px;
-}
         /* 网页上部分 */
 header{
+    width: 100%;
     height: 150px;
     background-color:#1DB176;
    
 }
 .serviceWrap{
+    width: 100%;
     height: 35px;
     background-color: white;
 }
@@ -19,11 +18,11 @@ header{
     float: left;
     color: #71B581;
     line-height: 35px;
-    margin-left: 142px;
+    margin-left: 20%;
 }
 .icon{
     float: right;
-    margin-right: 318px;
+    margin-right: 20%;
     line-height: 35px;
 }
 .icon > img{ 
@@ -31,13 +30,14 @@ header{
     padding: 0 5px;
 }
 .info{
+    width: 100%;
     line-height: 115px;
     
 }
 .info > img{
     line-height: 115px;
     vertical-align: middle;
-    padding-left: 142px;
+    padding-left: 10%;
 }
 .menu{
     width: 50%;
@@ -53,22 +53,26 @@ header{
     color: white;
     list-style: none;
     padding: 0 5%;
-}
-.menu ul li:hover{
-    cursor: pointer;
     border-bottom: 4px solid white;
 }
+
             /* 主体部分 */
 
-#main{
-    margin: 0 auto;
+#whole{
     background-color: #FAFAFA;
-    padding: 0 142px 150px;
+    height: 3000px;
+}
+#main{
+    width: 80%;
+    height: 1550px;
+    /* background-color: #FAFAFA; */
+    margin: 0 auto;
 }
 .top{
+    width: 100%;
     height: 60px;
-    margin-right: 17px;
-    border-bottom: 1px solid #d0d6d9;
+    /* background-color: cadetblue; */
+    border-bottom: 1px solid black;
 }
 .title{
     line-height: 60px;
@@ -78,61 +82,33 @@ header{
 }
 .contentList{
     height: 50px;
-    border-bottom: 1px solid #d0d6d9;
-    margin-right: 17px;
+    border-bottom: 1px solid black;
 }
 .contentList span{
     line-height: 50px;
-    margin-right: 15px;
+    margin-right: 2%;
 }
-/* .contentList ul :nth-child(2){
+.contentList ul :nth-child(2){
     background-color: #6BB078;
-} */
-
+}
 .introduction{
     height: 60px;
     line-height: 60px;
     border-bottom: 1px solid #d0d6d9;
-    margin-right: 17px;
 }
 
 #information{
     display: flex;
     flex-wrap: wrap;
+    
 }
 .card{
-    width: 394px;
-    border-radius: 2px;
-    margin-top: 25px;
-    margin-right: 15px;
-    color: #b8b8b8;
-    box-shadow: 0 0 2px #e2e2e2;
-    font-size: 90%;
-    border: 1px solid #e2e2e2;
-    background-color: white;
-}
-
-.hide{
-    display: none;
-    position: absolute;
-    width: 394px;
-    height: 468px;
-    color: white;
-    background-color: rgba(0,0,0,0.8);
-}
-.hide > p{
-    text-align: center;
-    margin:60px 30px;
-}
-/* 要 card 和hide 共同的父级元素才行
- 实现原理
-1. A元素与B元素有一个相同的父级。(表示A与B写在同一个父元素下面，是同级的)
-2. B元素默认隐藏，A元素默认显示。
-3. 当鼠标移到A元素身上时，看做是移动到父元素身上。（父元素获得hover状态）
-4. 再选中B元素，让其显示。
-*/
- .cardHide:hover .hide{
-    display: block;
+    width: 378px;
+    height: 473px;
+    background-color: #FFFFFF;
+    /* background-color: cornflowerblue; */
+    margin: 12px;
+    border: 1px solid #d0d6d9;
 }
 .cardTop{
     height: 180px;
@@ -151,8 +127,7 @@ header{
 }
 .cardTop h3{
     padding-top: 32px;
-    padding-bottom: 18px;
-    color: black;   
+    padding-bottom: 18px   
 }
 .cardMiddle ul{
     clear: both;
@@ -170,9 +145,6 @@ header{
 .cardMiddle ul li strong{
     margin-left: 8px;
     color: red;
-}
-.cardMiddle ul li span{
-    color: black;
 }
 .liOne{
     border-bottom: 1px solid #d0d6d9;
@@ -200,10 +172,9 @@ header{
     line-height: 40px;
     list-style: none;
     float: left;
+    /* border: 1px  solid #d0d6d9; */
     border-bottom: 1px solid #d0d6d9;
     padding-left: 14px;
-    color: black;
-    font-size: larger;
 }
 .Salary ul li span{
     float: right;
@@ -214,8 +185,6 @@ header{
     line-height: 45px;
     padding-left: 15px;
     border-bottom: 1px solid #d0d6d9;
-    color: black;
-    font-size: larger;
 }
 .studyNum strong{
     color: #DD5A00;
@@ -226,41 +195,18 @@ header{
     font-size: 12px;
     padding-left: 15px;
 }
-
-            /* 底部部分 */
 #bottom{
-    height:200px;
-    background-color: #1DB176;
+    height: 300px;
+    background-color: seagreen;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
 }
-.bottomTop{
-    margin-left: 40px;
-}
-.bottomTop > div{
-    margin-top: 30px;
-    font-size: larger;
-}
-.bottomMiddle{
-    margin-top: 30px;
-}
-.bottomMiddle p{
-    margin-bottom: 40px;
-}
-.bottomMiddle span{
-    margin-right: 50px;
-}
-.bottomBottom{
-    margin-top: 30px;
-}
-.bottomBottom > p{
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 10px;
+.jnshu{
+    
 }
 footer{
-    background-color: #1DB176;
+    background-color: #62A16F;
     color: white;
     border-top: 1px solid #75C086;
     text-align: center;

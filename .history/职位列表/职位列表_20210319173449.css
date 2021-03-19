@@ -117,21 +117,13 @@ header{
     position: absolute;
     width: 394px;
     height: 468px;
-    color: white;
-    background-color: rgba(0,0,0,0.8);
+    background-color: #3F3F3F;
 }
 .hide > p{
     text-align: center;
     margin:60px 30px;
 }
-/* 要 card 和hide 共同的父级元素才行
- 实现原理
-1. A元素与B元素有一个相同的父级。(表示A与B写在同一个父元素下面，是同级的)
-2. B元素默认隐藏，A元素默认显示。
-3. 当鼠标移到A元素身上时，看做是移动到父元素身上。（父元素获得hover状态）
-4. 再选中B元素，让其显示。
-*/
- .cardHide:hover .hide{
+ #information:hover .hide{
     display: block;
 }
 .cardTop{
