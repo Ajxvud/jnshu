@@ -85,7 +85,7 @@ header{
     line-height: 50px;
     margin-right: 15px;
 }
-.index:hover{
+.contentList ul span:hover{
     cursor: pointer;
     background-color: skyblue;
 }
