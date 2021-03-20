@@ -3,7 +3,7 @@
     padding: 0; 
 }
 body{
-    min-width: 460px;
+    min-width: 890px;
 }
 .top{
     width: 100%;
@@ -88,7 +88,11 @@ div#carousel-example-generic{
     float: left;
     height: 180px;
 }
-
+@media screen and (max-width:890px){
+    .info-item{
+        width: 80%;
+    }
+}
 .pho{
     text-align: center;
     height: 66px;
@@ -116,7 +120,7 @@ div#carousel-example-generic{
     text-align: center;
 }
 @media screen and (max-width: 890px){
-    .info .info-item {
+    .info-item {
         width: 100%;
     }
 }
@@ -302,7 +306,7 @@ div#carousel-example-generic{
 @media screen and (max-width:1500px){
     .homeCooperation > img{
         /* 图片占边框的宽度 */
-        width: 250px;
+        width: 25%;
     }
 }
 .homeCooperation :hover{
@@ -389,15 +393,3 @@ div#carousel-example-generic{
 }
 
 
-
-
-
-div{
-    h1{
-        color: red;
-    }
-} 
-
-
-.mixin
-使用@mixin定义代码块，使用@include使用代码块

@@ -302,7 +302,7 @@ div#carousel-example-generic{
 @media screen and (max-width:1500px){
     .homeCooperation > img{
         /* 图片占边框的宽度 */
-        width: 250px;
+        width: 25%;
     }
 }
 .homeCooperation :hover{
@@ -389,15 +389,3 @@ div#carousel-example-generic{
 }
 
 
-
-
-
-div{
-    h1{
-        color: red;
-    }
-} 
-
-
-.mixin
-使用@mixin定义代码块，使用@include使用代码块
