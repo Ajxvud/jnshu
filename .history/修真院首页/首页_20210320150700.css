@@ -315,22 +315,13 @@ div#carousel-example-generic{
     margin: 3% 10%;
     clear: both;
 }
-@media screen and (max-width:1283px){
-    .link{
-        height: auto;
-    }
-}
+
 .link >h3{
     text-align: center;
 }
 #first ul{
     position: relative;
     margin: 0 auto;
-}
-@media screen and (max-width:1282px){
-    #first ul{
-        margin-left: 20%;
-    }
 }
 #first ul li{
     float: left;
@@ -340,7 +331,7 @@ div#carousel-example-generic{
 @media screen and (max-width:1283px){
     #first >ul li{
         width: 20%;
-        
+        height: auto;
     }
 }
 .news{
@@ -385,7 +376,4 @@ div#carousel-example-generic{
     background-color: #26A26F;
     text-align: center;
     color: white;
-    
 }
-
-

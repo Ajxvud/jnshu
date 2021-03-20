@@ -1,9 +1,10 @@
 *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
+   
 }
 body{
-    min-width: 890px;
+    min-width: 821px;
 }
 .top{
     width: 100%;
@@ -72,7 +73,7 @@ div#carousel-example-generic{
 
 .contents{
     width: 100%; 
-    /* background-color: rgb(250,250,250); */
+    background-color: rgb(250,250,250);
     overflow: hidden;
 }
 .info{
@@ -88,7 +89,6 @@ div#carousel-example-generic{
     float: left;
     height: 180px;
 }
-
 .pho{
     text-align: center;
     height: 66px;
@@ -110,7 +110,7 @@ div#carousel-example-generic{
 .useless{
     width: 24%;
     height: 66px;
-    /* background-color: rgb(250,250,250); */
+    background-color: rgb(250,250,250);
 }
 .studyNum{
     text-align: center;
@@ -123,11 +123,10 @@ div#carousel-example-generic{
 @media screen and (max-width: 890px){
     .info-itemLast {
         width: 100%;
-        border: 1px solid white;
     }
 }
 .show{
-    /* background-color: rgb(250,250,250); */
+    background-color: rgb(250,250,250);
     text-align: center;
     padding-bottom: 20px;
     font-size: large;
@@ -139,7 +138,7 @@ div#carousel-example-generic{
 
 .learnStudyBox{
     width: 100%;
-    /* background-color: rgb(250,250,250); */
+    background-color: rgb(250,250,250);
     overflow: hidden;
 }
 
@@ -166,12 +165,7 @@ div#carousel-example-generic{
         width: 50%;
     }
 }
-@media screen and (max-width: 640px) {
-    .step{
-        width: 60%;
-        margin-left: 26%;
-    }
-}
+
 .step >div{
     float: left;
 }
@@ -181,7 +175,7 @@ div#carousel-example-generic{
     margin-top: 5%;
 }
 .num{
-    margin-top: 5%;
+    margin-top: 6%;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -200,57 +194,41 @@ div#carousel-example-generic{
 }
 .exStudyentsBox{
     width: 100%;
-    height: 550px;
+    height: 305px;
     clear: both;
-    /* background-color: rgb(250,250,250); */
-    text-align: center; 
+    background-color: rgb(250,250,250);
+    text-align: center;
+    overflow: hidden;
 }
-@media screen and (max-width:1500px){
-    .exStudyentsBox{
-        height: auto;
-        overflow: hidden;
-    }
-}
+
 .exStudyents{
     width: 80%;
-    height: 400px;
+    height: 305px;
     margin-left: 10%;
-    /* background-color: rgb(250,250,250); */
+    background-color: rgb(250,250,250);
+    /* background-color: burlywood; */
     
 }
 .exStudyents .box{
-    width: 240px;
-    height: 370px;
+    width: 20%;
     float: left;
     margin-right: 5%;
     box-shadow: 1px 1px 4px #eae9ea;
 }
-@media screen and (max-width:1500px){
-    .exStudyents .box{
-        width: 30%;
-        margin: 5% 10%;
-    }
-}
-@media screen and (max-width:890px){
-    .exStudyents .box{
-        width: 80%;
-        margin: 5% 10%;
-    }
-}
 .exStudyents img{
-    margin: 20px 0 37px 0;
+    width: 60%;
+    margin-top: 6%;
 }
 
 .exStudyents .text{
     text-align: center;
-    font-weight: 600;
 }
 
 .information{
     width: 80%;
+    /* background-color:aqua ; */
     margin-left: 10%;
     margin-bottom: 10%;
-    color: #999;
 }
 .dot {
     display: inline-block;
@@ -263,86 +241,93 @@ div#carousel-example-generic{
 }
 .page{
     text-align: center;
-    /* background-color: rgb(250,250,250); */
-}
-@media screen and (max-width:1500px){
-    .page{
-        display: none;
-    }
+    background-color: rgb(250,250,250);
+
 }
 .cooperation{
     width: 100%;
-    height: 300px;
-    /* background-color:#FAFAFA; */
-    clear: both;
+    background-color:#FAFAFA;
 }
 
 .type{
     width: 80%;
-    height: 176px;
     margin-left: 10%;
+    display: flex; 
+    justify-content: space-between;
 }
 .homeCooperation{
-     width: 20%; 
-     height: 180px; 
-     float: left;
-}
-@media screen and (max-width:1500px){
-    .homeCooperation{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+    /* float: left;
+    width: 20%;
+     */
+     width: 20%;
+     
 }
 .homeCooperation > img{
+    /* width: 100%;
+    height: 178px;
+    padding: 1%; */
     width: 100%;
     height: 178px;
     padding: 1%;
 } 
-@media screen and (max-width:1500px){
-    .homeCooperation > img{
-        /* 图片占边框的宽度 */
-        width: 25%;
-    }
-}
 .homeCooperation :hover{
     box-shadow: 0px 0px 10px #d6d6d6;
 }
+@media screen and (max-width: 890px) {
+    .homeCooperation{
+        width: 50%;
+    }
+}
 
+.showLink{
+    background-color: rgb(250,250,250);
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: large;
+    font-weight: 600;
+    padding-top: 5%;
+}
+
+
+#first>ul{
+    /* padding: 1% 0 4% 10%; */
+    
+}
 .link{
     height: 200px;
-    color: #999;
-    margin: 3% 10%;
+    background-color: rgb(250,250,250);
+    padding-bottom: 2%;
     clear: both;
 }
-@media screen and (max-width:1283px){
-    .link{
-        height: auto;
-    }
-}
-.link >h3{
-    text-align: center;
-}
-#first ul{
-    position: relative;
-    margin: 0 auto;
-}
-@media screen and (max-width:1282px){
-    #first ul{
-        margin-left: 20%;
-    }
-}
-#first ul li{
+.link ul li{
     float: left;
     width: 61px;
-    margin: 10px 30px;
+    font-size: 80%;
+    margin-right: 78px;
+    padding-bottom: 22px;
 }
-@media screen and (max-width:1283px){
-    #first >ul li{
-        width: 20%;
-        
-    }
+
+/* .link ul li{
+    font-size: 80%;
+    float: left;
+    padding-right: 71px;
+    color: #999;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+} */
+
+.bottom{
+    width: 100%;
+    height: 100px;
+    background-color: cyan;
 }
+br{
+    background-color:#26A26F;
+    
+}
+
 .news{
     background-color: #26A26F;
     display: flex;
@@ -366,8 +351,7 @@ div#carousel-example-generic{
 .rt{
     margin-top: 23px;
     width: 180px;
-    height: 175px;
-    margin-right: 4%;
+    height: 175px;;
     /* background-color: green; */
 }
 .wechat{
@@ -385,7 +369,9 @@ div#carousel-example-generic{
     background-color: #26A26F;
     text-align: center;
     color: white;
-    
 }
-
-
+@media screen and (max-width:1283px){
+    #first >ul li{
+        width: 20%;
+    }
+}

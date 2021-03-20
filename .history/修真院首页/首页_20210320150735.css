@@ -327,11 +327,6 @@ div#carousel-example-generic{
     position: relative;
     margin: 0 auto;
 }
-@media screen and (max-width:1282px){
-    #first ul{
-        margin-left: 20%;
-    }
-}
 #first ul li{
     float: left;
     width: 61px;
@@ -385,7 +380,4 @@ div#carousel-example-generic{
     background-color: #26A26F;
     text-align: center;
     color: white;
-    
 }
-
-

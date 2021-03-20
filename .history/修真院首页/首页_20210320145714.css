@@ -3,7 +3,7 @@
     padding: 0; 
 }
 body{
-    min-width: 890px;
+    min-width: 640px;
 }
 .top{
     width: 100%;
@@ -312,13 +312,8 @@ div#carousel-example-generic{
 .link{
     height: 200px;
     color: #999;
-    margin: 3% 10%;
+    padding: 3% 10%;
     clear: both;
-}
-@media screen and (max-width:1283px){
-    .link{
-        height: auto;
-    }
 }
 .link >h3{
     text-align: center;
@@ -326,11 +321,6 @@ div#carousel-example-generic{
 #first ul{
     position: relative;
     margin: 0 auto;
-}
-@media screen and (max-width:1282px){
-    #first ul{
-        margin-left: 20%;
-    }
 }
 #first ul li{
     float: left;
@@ -340,7 +330,6 @@ div#carousel-example-generic{
 @media screen and (max-width:1283px){
     #first >ul li{
         width: 20%;
-        
     }
 }
 .news{
@@ -385,7 +374,4 @@ div#carousel-example-generic{
     background-color: #26A26F;
     text-align: center;
     color: white;
-    
 }
-
-
