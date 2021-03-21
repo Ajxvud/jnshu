@@ -53,15 +53,8 @@ div#carousel-example-generic{
     margin: 0px;
     overflow: hidden; 
 }
-@media screen and (max-width:890px){
-    .nav-wrap{
-        display: none;
-    }
-}
-@media screen and (max-width:890px){
-    #accordion{
-        display: block;
-    }
+@media screen and(max-width:890px){
+    
 }
 .nav-wrap ul {
     float: right;
@@ -87,26 +80,22 @@ div#carousel-example-generic{
 }
 
 #headingOne{
-    background-color: rgb(38,162,111);
+    background-color: seagreen;
     overflow: hidden;
 }
 #headingOne img{
     float: right;
 }
 #collapseOne{
-    background-color: rgb(38,162,111);
+    background-color: seagreen;
 }
 #collapseOne ul li{
     list-style: none;
     text-align: center;
     color: white;
     font-size: large;
-    margin: 5px;
 }
-#collapseOne ul li:hover{
-    cursor: pointer;
-    color: yellow;
-}
+
 .contents{
     width: 100%; 
     /* background-color: rgb(250,250,250); */

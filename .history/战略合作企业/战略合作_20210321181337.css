@@ -55,7 +55,7 @@ body{
     max-width: 100%;
 }
 @media screen and (max-width:960px){
-    .headerNav{
+    .navWrap{
         display: none;
     }
 }
@@ -75,7 +75,8 @@ body{
     color: white;
     font-size: 2rem;
     margin-right: 3%;
-    height: 101px;  
+    height: 101px;
+    
 }
 .navWrap ul li:hover{
     border-bottom: 4px solid #fff;
@@ -85,35 +86,6 @@ body{
     display: none;
     margin: 0px;
     overflow: hidden; 
-}
-#headingOne{
-    background-color: rgb(38,162,111);
-    overflow: hidden;
-}
-#headingOne img{
-    float: right;
-}
-#collapseOne{
-    background-color: rgb(38,162,111);
-}
-#collapseOne ul li{
-    list-style: none;
-    text-align: center;
-    color: white;
-    font-size: large;
-    margin: 5px;
-}
-#collapseOne ul li:hover{
-    cursor: pointer;
-    color: yellow;
-}
-@media screen and (max-width:960px){
-    #accordion{
-        display: block;
-    }
-}
-#accordion ul li {
-    list-style: none;
 }
 .headHr{
     width: 100%;
@@ -127,7 +99,12 @@ body{
         font-size: 1rem;
     }
 }
-
+@media screen and (max-width:960px){
+    #btn btn-info{
+        display: block;
+        z-index: 11111;
+    }
+}
 .enterprise{
     padding: 10%;
     background-color: #FAFAFA;

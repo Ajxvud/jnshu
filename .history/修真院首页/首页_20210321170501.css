@@ -42,32 +42,21 @@ div#carousel-example-generic{
     height: 91px;
     background-color: rgb(38,162,111);
     padding-bottom: 108px;
-    
 }
 .content{
     overflow: hidden;
-    
-}
-#accordion{
     display: none;
-    margin: 0px;
-    overflow: hidden; 
-}
-@media screen and (max-width:890px){
-    .nav-wrap{
-        display: none;
-    }
-}
-@media screen and (max-width:890px){
-    #accordion{
-        display: block;
-    }
 }
 .nav-wrap ul {
     float: right;
     list-style: none;
     color: #fff;
     padding-right:12%
+}
+@media screen and (max-width:890px){
+    .nav-wrap ul{
+        display: none;
+    }
 }
 .nav-wrap li {
     display: inline-block;
@@ -87,26 +76,22 @@ div#carousel-example-generic{
 }
 
 #headingOne{
-    background-color: rgb(38,162,111);
+    background-color: seagreen;
     overflow: hidden;
 }
 #headingOne img{
     float: right;
 }
 #collapseOne{
-    background-color: rgb(38,162,111);
+    background-color: seagreen;
 }
 #collapseOne ul li{
     list-style: none;
     text-align: center;
     color: white;
     font-size: large;
-    margin: 5px;
 }
-#collapseOne ul li:hover{
-    cursor: pointer;
-    color: yellow;
-}
+
 .contents{
     width: 100%; 
     /* background-color: rgb(250,250,250); */

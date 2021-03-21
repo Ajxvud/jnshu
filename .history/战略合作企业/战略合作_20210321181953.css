@@ -103,10 +103,7 @@ body{
     font-size: large;
     margin: 5px;
 }
-#collapseOne ul li:hover{
-    cursor: pointer;
-    color: yellow;
-}
+
 @media screen and (max-width:960px){
     #accordion{
         display: block;

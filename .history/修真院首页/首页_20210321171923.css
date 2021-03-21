@@ -101,12 +101,8 @@ div#carousel-example-generic{
     text-align: center;
     color: white;
     font-size: large;
-    margin: 5px;
 }
-#collapseOne ul li:hover{
-    cursor: pointer;
-    color: yellow;
-}
+
 .contents{
     width: 100%; 
     /* background-color: rgb(250,250,250); */

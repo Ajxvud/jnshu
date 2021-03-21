@@ -42,32 +42,25 @@ div#carousel-example-generic{
     height: 91px;
     background-color: rgb(38,162,111);
     padding-bottom: 108px;
-    
 }
 .content{
     overflow: hidden;
-    
 }
-#accordion{
-    display: none;
-    margin: 0px;
-    overflow: hidden; 
-}
-@media screen and (max-width:890px){
-    .nav-wrap{
+@media (min-width: 890px){
+    .navbar-toggle {
         display: none;
-    }
-}
-@media screen and (max-width:890px){
-    #accordion{
-        display: block;
-    }
+        padding: 20px 10px;
 }
 .nav-wrap ul {
     float: right;
     list-style: none;
     color: #fff;
     padding-right:12%
+}
+@media (min-width: 890px){
+    .nav-wrap ul{
+        
+    }
 }
 .nav-wrap li {
     display: inline-block;
@@ -86,33 +79,11 @@ div#carousel-example-generic{
     border-bottom: 4px solid #fff;
 }
 
-#headingOne{
-    background-color: rgb(38,162,111);
-    overflow: hidden;
-}
-#headingOne img{
-    float: right;
-}
-#collapseOne{
-    background-color: rgb(38,162,111);
-}
-#collapseOne ul li{
-    list-style: none;
-    text-align: center;
-    color: white;
-    font-size: large;
-    margin: 5px;
-}
-#collapseOne ul li:hover{
-    cursor: pointer;
-    color: yellow;
-}
 .contents{
     width: 100%; 
     /* background-color: rgb(250,250,250); */
     overflow: hidden;
 }
-
 .info{
     width: 80%;
     height: 300px;
