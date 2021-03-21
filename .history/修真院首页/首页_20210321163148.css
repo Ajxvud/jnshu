@@ -41,7 +41,6 @@ div#carousel-example-generic{
 }
 .nav-wrap {
     width: 100%;
-    height: 91px;
     background-color: rgb(38,162,111);
     padding-bottom: 108px;
 }
@@ -57,7 +56,7 @@ div#carousel-example-generic{
 
 .nav-wrap li {
     display: inline-block;
-    height: 107px;
+    height: 96px;
     padding: 0 25px;
     font-size: 20px;
     line-height: 93px;
