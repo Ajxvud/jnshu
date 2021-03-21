@@ -54,10 +54,14 @@ body{
     background: url(./imgs/logo.jpg) center center no-repeat;
     max-width: 100%;
 }
-@media screen and (max-width:960px){
-    .navWrap{
-        display: none;
-    }
+.hide {
+    float: right;
+    line-height: 101px;
+    margin-right: 5%;
+}
+.hide ul li{
+    list-style: none;
+    background-color: aqua;
 }
 .navWrap ul{
     float: right;
@@ -66,6 +70,11 @@ body{
     width: 35%;
     height: 91px;
     margin-right: 13%;
+}
+@media screen and (max-width:950px){
+    .navWrap ul{
+        display: none;
+    }
 }
 .navWrap ul li{
     cursor: pointer;
@@ -90,12 +99,6 @@ body{
 @media screen and (max-width: 831px){
     .navWrap ul li{
         font-size: 1rem;
-    }
-}
-@media screen and (max-width:960px){
-    #btn btn-info{
-        display: block;
-        z-index: 11111;
     }
 }
 .enterprise{
