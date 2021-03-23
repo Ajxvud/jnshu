@@ -185,12 +185,10 @@
     align-items: center;
 }
 .nextStep{
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: #e15053;
-    color: white;
-    border: 1px solid #e15053;
+    width: 200px;
+    height: 75px;
+    border-radius: 5px;
+    background-color: #C24E4D;
 }
 #bottom{
     height: 200px;

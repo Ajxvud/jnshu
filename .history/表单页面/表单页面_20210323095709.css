@@ -109,7 +109,7 @@
     margin-bottom: 20px; 
 }
 .main .table{
-    height: 700px;
+    height: 600px;
     border: 1px solid #ccc;
 }
 .main .boxType{
@@ -124,13 +124,12 @@
     line-height: 30px;
     color: #4C78DA;
 }
-.mainTop{
+.infomation{
     display: flex;
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    padding-right: 25px;
-    background-color: #FBFCFF;
+    margin-right: 25px;
 }
 .infomationType{
     width: 30%;
@@ -139,59 +138,12 @@
     justify-content: space-around;
     align-items: center;
 }
-.mainMiddle{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 25px;
-    background-color: #FBFCFF;
-}
-
-.cnfirmSize{
-    width: 80%;
-}
-.typeTwo{
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
-    margin: 20px 0;
-}
+.
 .typeTwo input{
     width: 50px;
 }
-.mainBottom{
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
-    padding-right: 25px;
-    background-color: #FBFCFF;
-    border-bottom:1px solid #ccc;
-}
-.infomationTypeThree{
-    display: flex;
-    justify-content: space-between;
-}
-.typeThree{
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
-    margin: 20px;
-}
-.nextBox{
-    height: 295px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nextStep{
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: #e15053;
-    color: white;
-    border: 1px solid #e15053;
-}
+
+
 #bottom{
     height: 200px;
     background-color: #F9F9F9;

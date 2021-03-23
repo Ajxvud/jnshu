@@ -178,19 +178,10 @@
     width: 55%;
     margin: 20px;
 }
-.nextBox{
-    height: 295px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .nextStep{
-    width: 150px;
+    width: 100px;
     height: 50px;
-    border-radius: 10px;
-    background-color: #e15053;
-    color: white;
-    border: 1px solid #e15053;
+    border-radius: 5px;
 }
 #bottom{
     height: 200px;

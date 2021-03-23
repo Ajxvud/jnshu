@@ -109,7 +109,7 @@
     margin-bottom: 20px; 
 }
 .main .table{
-    height: 700px;
+    height: 600px;
     border: 1px solid #ccc;
 }
 .main .boxType{
@@ -129,8 +129,7 @@
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    padding-right: 25px;
-    background-color: #FBFCFF;
+    margin-right: 25px;
 }
 .infomationType{
     width: 30%;
@@ -143,8 +142,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 25px;
-    background-color: #FBFCFF;
+    margin-right: 25px;
 }
 
 .cnfirmSize{
@@ -164,34 +162,13 @@
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    padding-right: 25px;
-    background-color: #FBFCFF;
-    border-bottom:1px solid #ccc;
+    margin-right: 25px;
 }
-.infomationTypeThree{
+.infomationTypeTwo{
     display: flex;
     justify-content: space-between;
 }
-.typeThree{
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
-    margin: 20px;
-}
-.nextBox{
-    height: 295px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nextStep{
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: #e15053;
-    color: white;
-    border: 1px solid #e15053;
-}
+
 #bottom{
     height: 200px;
     background-color: #F9F9F9;
