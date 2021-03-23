@@ -20,14 +20,19 @@
     margin-left: 15%;
 }
 .logIN{
-    width: 80px;
+    width: 200px;
     line-height: 40px;
-    margin-right: 10%;
+    margin-right: 5%;
     display: flex;
-    justify-content: space-between;
 }
 .logIN span{
-    padding-left: 6px;
+    width: 70px;
+    text-align: center;
+}
+.logIN span:hover{
+    background-color: white;
+    color: black;
+    margin: 0 15px;
 }
 .topNav{
     width: 500px;
@@ -55,6 +60,10 @@
     border-radius: 3px;
     box-shadow: 1px 1px 1px #ccc;
 }
+.topNav ul li:hover{
+    background-color: #5F79D9;
+    color: white;
+}
 #middle{
     width: 80%;
     margin: 0 auto;
@@ -74,15 +83,15 @@
     float: left;
     position: relative;
 }
-.middleNav .box .line{
+.line{
     height: 10px;
     border-radius: 5px;
     line-height: 10px;
     text-align: center;
-    background: #dedede;
+    background-color: #dedede;
     color: white;
 }
-.middleNav .box .circle{
+.circle{
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -92,15 +101,26 @@
     top: 10%;
     transform: translate(-15px, -15px);
     z-index: -1;
-
 }
-.middleNav .box .menu{
+.line:hover{
+    background-color: #E17D00;
+}
+.line:hover~.circle{
+    background-color: #E17D00;
+}
+.line:hover~.menu{
+    color: #E17D00;
+}
+.menu{
     text-align: center;
     margin-top: 20px;
+    color: #dedede;
 }
+
 .main{
     height: 800px;
     /* background-color: silver; */
+    color: #838384;
 }
 .main h3{
     border-left: 5px solid #4C78DA;
@@ -108,16 +128,16 @@
     font-weight: 500;  
     margin-bottom: 20px; 
 }
-.main .table{
+ .table{
     height: 700px;
     border: 1px solid #ccc;
 }
-.main .boxType{
+ .boxType{
     height: 30px;
     padding-left: 20px;
     background-color: #F3F3F3;
 }
-.main .boxType >img{
+.boxType >img{
     vertical-align: middle;
 }
 .main .boxType span{
@@ -138,7 +158,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
+/* 清楚radio默认样式 */
+/* input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+} */
+
+label{
+    font-weight: 500;
+}
+
 .mainMiddle{
     display: flex;
     justify-content: space-between;
@@ -184,6 +216,10 @@
     justify-content: center;
     align-items: center;
 }
+button{
+    /* 去掉按键点击效果 */
+    outline:none; 
+    }
 .nextStep{
     width: 150px;
     height: 50px;
