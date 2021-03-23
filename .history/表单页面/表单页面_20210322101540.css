@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    height: 200px;
+    background-color: aqua;
+}
+.topInfo{
+    height: 40px;
+    background-color: rosybrown;
+}
+.topNav{
+    width: 500px;
+    height: 160px;
+    background-color: slategray;
+    float: right;
+    margin-right:125px ;
+}
+#middle{
+    height: 1000px;
+    background-color:red;
+}
+.flowChart{
+    width: 500px;
+    height: 100px;
+    float: right;
+    background-color: teal;
+}
+#bottom{
+    height: 400px;
+    background-color: chartreuse;
+}

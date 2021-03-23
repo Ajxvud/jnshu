@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    height: 200px;
+    background-color: aqua;
+    overflow: hidden;
+}
+.topInfo{
+    height: 40px;
+    background-color: #4C78DA;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.topInfo > span{
+    width: 210px;
+    line-height: 40px;
+    
+}
+.logIN{
+    width: 100px;
+    line-height: 40px;
+}
+.topNav{
+    width: 500px;
+    height: 160px;
+    background-color: slategray;
+    float: right;
+    margin-right:10%;
+}
+#middle{
+    width: 80%;
+    margin: 0 auto;
+    height: 1000px;
+    background-color:red;
+}
+.middleNav{
+    height: 100px;
+    background-color:rebeccapurple;
+}
+.main{
+    height: 800px;
+    margin: 50px 0px;
+    background-color: silver;
+}
+#bottom{
+    height: 300px;
+    background-color: chartreuse;
+}
+footer{
+    height: 50px;
+    background-color: tan;
+}

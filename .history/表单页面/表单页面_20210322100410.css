@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    height: 200px;
+    background-color: aqua;
+}
+.topInfo{
+    height: 40px;
+    background-color: rosybrown;
+}
+.topNav ul{
+    width: 500px;
+    background-color: seashell;
+    float: right;
+    list-style: none;
+}
+.topNav ul li{
+    display: flex;
+    justify-content: space-between;
+}
+#middle{
+    height: 1000px;
+    background-color:red;
+}
+#bottom{
+    height: 400px;
+    background-color: chartreuse;
+}

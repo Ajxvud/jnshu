@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    height: 200px;
+    background-color: aqua;
+}
+.topInfo{
+    height: 40px;
+    background-color: rosybrown;
+}
+.topNav ul{
+    background-color: seashell;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+#middle{
+    height: 1000px;
+    background-color:red;
+}
+#bottom{
+    height: 400px;
+    background-color: chartreuse;
+}

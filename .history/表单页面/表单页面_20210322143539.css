@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    height: 110px;
+    background-color: #F9F9F9;
+    overflow: hidden;
+}
+.topInfo{
+    height: 40px;
+    background-color: #4C78DA;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.topInfo > span{
+    width: 210px;
+    line-height: 40px;
+    margin-left: 15%;
+}
+.logIN{
+    width: 80px;
+    line-height: 40px;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.logIN span{
+    padding-left: 6px;
+}
+.topNav{
+    width: 500px;
+    height: 70px;
+    float: right;
+    margin-right:10%;
+}
+.topNav ul{
+    position: relative;
+    top: 50%;
+    /* 垂直居中 */
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    justify-content:space-between;
+}
+.topNav ul li{
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #ccc;
+}
+#middle{
+    width: 80%;
+    margin: 0 auto;
+    height: 1000px;
+    background-color:red;
+}
+.middleNav{
+    height: 100px;
+    background-color:rebeccapurple;
+}
+.main{
+    height: 800px;
+    margin: 50px 0px;
+    background-color: silver;
+}
+#bottom{
+    height: 300px;
+    background-color: chartreuse;
+}
+.row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.job{
+    width: 33%;
+    height: 200px;
+    text-align: center;
+    background-color: yellow;
+}
+.about{
+    width: 33%;
+    height: 200px;
+    
+    background-color: violet;
+}
+
+.about a {
+    text-decoration: none;
+}
+.tel{
+    width: 33%;
+    height: 200px;
+    background-color: #4C78DA;
+}
+.tel ul li{
+    list-style: none;
+}
+footer{
+    height: 25px;
+    line-height: 25px;
+    background-color:#4C78DA;
+    font-size: smaller;
+    color: white;
+    text-align: center;
+}

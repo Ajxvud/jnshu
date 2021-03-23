@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    height: 200px;
+    background-color: aqua;
+}
+#middel{
+    height: 1000px;
+    background-color: bisque;
+}
+#bottom{
+    height: 400px;
+    background-color: chartreuse;
+}

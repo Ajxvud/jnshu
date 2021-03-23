@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    height: 200px;
+    background-color: aqua;
+}
+.topInfo{
+    height: 40px;
+    background-color: rosybrown;
+}
+.topNav{
+    width: 500px;
+    height: 200px;
+    background-color: slategray;
+}
+#middle{
+    height: 1000px;
+    background-color:red;
+}
+#bottom{
+    height: 400px;
+    background-color: chartreuse;
+}
