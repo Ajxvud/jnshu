@@ -77,6 +77,10 @@ body{
     margin-right: 3%;
     height: 101px;  
 }
+.navWrap ul li a{
+    text-decoration: none;
+    color: white;
+}
 .navWrap ul li:hover{
     border-bottom: 4px solid #fff;
 }

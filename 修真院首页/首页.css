@@ -48,6 +48,10 @@ div#carousel-example-generic{
     overflow: hidden;
     
 }
+.content ul li a {
+    color: white;
+    text-decoration : none 
+}
 #accordion{
     display: none;
     margin: 0px;

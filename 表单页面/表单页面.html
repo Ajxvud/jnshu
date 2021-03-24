@@ -35,54 +35,63 @@
 
     <div id="middle">
         <div class="middleNav">
-            <div class="box">
-                
-            <div class="line">1</div>
-            <div class="circle"></div>
-            
-            <div class="menu">1.定制纸箱</div>
+            <div class="box">  
+                <div class="line">1</div>
+                <div class="circle"></div>
+                <div class="menu">1.定制纸箱</div>
             </div>
 
             <div class="box">
-                <div class="lineCircle">
-                    <div class="line">2</div>
-                    <div class="circle"></div>
-                    <div class="menu">2.选择数量</div>
-                </div>
-                
+                <div class="line">2</div>
+                <div class="circle"></div>
+                <div class="menu">2.选择数量</div>
             </div>
+
             <div class="box">
-                <div class="lineCircle">
-                    <div class="line">3</div>
-                    <div class="circle"></div>
-                    <div class="menu">3.上传附件</div>
-                </div>
-                
+                <div class="line">3</div>
+                <div class="circle"></div>
+                <div class="menu">3.上传附件</div> 
             </div>
+
             <div class="box">
-                <div class="lineCircle">
-                    <div class="line">4</div>
-                    <div class="circle"></div>
-                    <div class="menu">4.确认下单</div>
-                </div>
-                
+                <div class="line">4</div>
+                <div class="circle"></div>
+                <div class="menu">4.确认下单</div>
             </div>
         </div>
         <div class="main">
             <h3>请您按照以下步骤来定制您的纸箱</h3>
-            <div class="table">
+            <div class="table"> 
                 <div class="boxType">
                     <img src="./imgs/logo-1.png" alt="">
                     <span>选择箱型</span>
                 </div>
                 <div class="mainTop">
-                    <div class="infomationType">
+                    <!-- <div class="infomationType">
                         <label class="type"><input type="radio" name="cheakRadios">&#8195 对口箱</label>
                         <label class="type"><input type="radio" name="cheakRadios">&#8195 飞机盒</label>
                         <label class="type"><input type="radio" name="cheakRadios">&#8195 天地盖</label>
-                    </div>
+                    </div>-->
                     
-                    <div class="btn-group">
+                    <form>
+                        <div class="box">
+                            <input type="radio"  name="step-1" id="button-1" checked>
+                            <label for="button-1"></label>
+                            <span>对口箱&nbsp;&nbsp;</span>
+                        </div>
+                        <div class="box">
+                            <input type="radio" name="step-1" id="button-2">
+                            <label for="button-2"></label>
+                            <span>飞机盒&nbsp;&nbsp;</span>
+                        </div>
+                        <div class="box">
+                            <input type="radio" name="step-1" id="button-3">
+                            <label for="button-3"></label>
+                            <span>天地盖&nbsp;&nbsp;</span>
+                        </div>
+                    </form>
+                    
+                    <!-- <div class="btn-group">
                         <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown">
                             查看详情
                             <span》 class="caret"></span>
@@ -101,7 +110,17 @@
                                 <a href="#">查看详情</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
+                    
+                    <select>
+                    <option>
+                        查看详情
+                    </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
                 </div>
 
                 <div class="boxType">
@@ -128,7 +147,7 @@
                     <div class="btn-group">
                         <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown">
                             查看详情
-                            <span》 class="caret"></span>
+                            <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
@@ -185,10 +204,8 @@
                     <button class="nextStep">下一步</button>
                 </div>
 
-            </div>
-        </div>
-
-
+            </div> 
+     
 
         <div id="bottom">
             <div class="bottomRow">
