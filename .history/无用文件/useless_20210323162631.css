@@ -28,18 +28,3 @@ body{
 	height: 100px;
 	background: pink;
 }
-.box1:hover{
-	background: #C1841F;
-}
-.box1:hover~.box2{
-	background: #AB520E;
-}
-.box1:hover~.box3{
-	background: #15B7AA;
-}
-.box1:hover~.box4{
-	background: #690A7E;
-}
-.box1:hover~.box5{
-	background: #B0CB1B;
-}

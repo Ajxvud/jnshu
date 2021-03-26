@@ -35,121 +35,57 @@
 
     <div id="middle">
         <div class="middleNav">
-            <div class="box">  
-                <div class="line">1</div>
-                <div class="circle"></div>
-                <div class="menu">1.定制纸箱</div>
+            <div class="box">
+                
+            <div class="line">1</div>
+            <div class="circle"></div>
+            
+            <div class="menu">1.定制纸箱</div>
             </div>
 
             <div class="box">
-                <div class="line">2</div>
-                <div class="circle"></div>
-                <div class="menu">2.选择数量</div>
+                <div class="lineCircle">
+                    <div class="line">2</div>
+                    <div class="circle"></div>
+                    <div class="menu">2.选择数量</div>
+                </div>
+                
             </div>
-
             <div class="box">
-                <div class="line">3</div>
-                <div class="circle"></div>
-                <div class="menu">3.上传附件</div> 
+                <div class="lineCircle">
+                    <div class="line">3</div>
+                    <div class="circle"></div>
+                    <div class="menu">3.上传附件</div>
+                </div>
+                
             </div>
-
             <div class="box">
-                <div class="line">4</div>
-                <div class="circle"></div>
-                <div class="menu">4.确认下单</div>
+                <div class="lineCircle">
+                    <div class="line">4</div>
+                    <div class="circle"></div>
+                    <div class="menu">4.确认下单</div>
+                </div>
+                
             </div>
         </div>
         <div class="main">
             <h3>请您按照以下步骤来定制您的纸箱</h3>
-            <div class="table"> 
+            <div class="table">
                 <div class="boxType">
                     <img src="./imgs/logo-1.png" alt="">
                     <span>选择箱型</span>
                 </div>
                 <div class="mainTop">
-                    <form>
-                        <div class="box">
-                            <input type="radio"  name="step" id="button-1" checked>
-                            <label for="button-1"></label>
-                            <span>对口箱&nbsp;&nbsp;</span>
-                        </div>
-                        <div class="box">
-                            <input type="radio" name="step" id="button-2">
-                            <label for="button-2"></label>
-                            <span>飞机盒&nbsp;&nbsp;</span>
-                        </div>
-                        <div class="box">
-                            <input type="radio" name="step" id="button-3">
-                            <label for="button-3"></label>
-                            <span>天地盖&nbsp;&nbsp;</span>
-                        </div>
-                    </form>
-                    <select>
-                        <option>
-                            查看详情
-                        </option>
-                        <option value="1">查看详情</option>
-                        <option value="2">查看详情</option>
-                        <option value="3">查看详情</option>
-                        <option value="4">查看详情</option>
-                    </select>
-                </div>
-
-                <div class="boxType">
-                    <img src="./imgs/logo-2.png" alt="">
-                    <span>确定尺寸</span>
-                </div>
-
-                <div class="mainMiddle">
-                    <!-- <div class="cnfirmSize">
-                        <div class="typeTwo">
-                            <label class="type"><input type="radio" name="cheakRadios"><span>外径</span></label>
-                            <div>长 <input type="number" min="1">mm</div>
-                            <div>宽 <input type="number" min="1">mm</div>
-                            <div>高 <input type="number" min="1">mm</div>
-                        </div>
-                        <div class="typeTwo">
-                            <label class="type"><input type="radio" name="cheakRadios"><span>内径</span></label>
-                            <div>长 <input type="number" min="1">mm</div>
-                            <div>宽 <input type="number" min="1">mm</div>
-                            <div>高 <input type="number" min="1">mm</div>
-                        </div>
-                    </div> -->
-                    <div class="size">
-                        
+                    <div class="infomationType">
+                        <label class="type"><input type="radio" name="cheakRadios"><span> &#8195 对口箱</span></label>
+                        <label class="type"><input type="radio" name="cheakRadios">&#8195 飞机盒</label>
+                        <label class="type"><input type="radio" name="cheakRadios">&#8195 天地盖</label>
                     </div>
-                    <div class="size-1">
-                        <input type="radio"  id="step-4" name="size" value="button-1" checked>
-                        <label for="step-4"></label>
-                        <span>外径&nbsp;&nbsp;</span>
-                        <div class="size-select">
-                            长&nbsp;<input class="size" type="text" name="length">&nbsp;mm&nbsp;
-                        </div>
-                        <div class="size-select">
-                            宽&nbsp;<input class="size" type="text" name="width">&nbsp;mm&nbsp;
-                        </div>
-                        <div class="size-select">
-                            高&nbsp;<input class="size" type="text" name="height">&nbsp;mm&nbsp;
-                        </div>
-                    </div>
-                    <div class="size-2">
-                        <input type="radio" class="rdo" id="step-5" name="size" value="button-1">
-                        <label for="step-5"></label>
-                        <span>内径&nbsp;&nbsp;</span>
-                        <div class="size-select">
-                            长&nbsp;<input class="size" type="text" name="length">&nbsp;mm&nbsp;
-                        </div>
-                        <div class="size-select">
-                            宽&nbsp;<input class="size" type="text" name="width">&nbsp;mm&nbsp;
-                        </div>
-                        <div class="size-select">
-                            高&nbsp;<input class="size" type="text" name="height">&nbsp;mm&nbsp;
-                        </div>
-                    </div>
-                    <!-- <div class="btn-group">
+                    
+                    <div class="btn-group">
                         <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown">
                             查看详情
-                            <span class="caret"></span>
+                            <span》 class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
@@ -165,16 +101,50 @@
                                 <a href="#">查看详情</a>
                             </li>
                         </ul>
-                    </div> -->
-                    <select>
-                        <option>
+                    </div>
+                </div>
+
+                <div class="boxType">
+                    <img src="./imgs/logo-2.png" alt="">
+                    <span>确定尺寸</span>
+                </div>
+
+                <div class="mainMiddle">
+                    <div class="cnfirmSize">
+                        <div class="typeTwo">
+                            <label class="type"><input type="radio" name="cheakRadios"><span>外径</span></label>
+                            <div>长 <input type="number" min="1">mm</div>
+                            <div>宽 <input type="number" min="1">mm</div>
+                            <div>高 <input type="number" min="1">mm</div>
+                        </div>
+                        <div class="typeTwo">
+                            <label class="type"><input type="radio" name="cheakRadios"><span>内径</span></label>
+                            <div>长 <input type="number" min="1">mm</div>
+                            <div>宽 <input type="number" min="1">mm</div>
+                            <div>高 <input type="number" min="1">mm</div>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown">
                             查看详情
-                        </option>
-                        <option value="1">查看详情</option>
-                        <option value="2">查看详情</option>
-                        <option value="3">查看详情</option>
-                        <option value="4">查看详情</option>
-                    </select>
+                            <span》 class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="#">查看详情</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">查看详情</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">查看详情</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">查看详情</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="boxType">
@@ -215,8 +185,10 @@
                     <button class="nextStep">下一步</button>
                 </div>
 
-            </div> 
-     
+            </div>
+        </div>
+
+
 
         <div id="bottom">
             <div class="bottomRow">

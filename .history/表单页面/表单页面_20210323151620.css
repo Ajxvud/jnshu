@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body{
-    min-width: 353px;
-}
 #top{
     height: 110px;
     background-color: #F9F9F9;
@@ -22,31 +19,18 @@ body{
     line-height: 40px;
     margin-left: 15%;
 }
-@media screen and (max-width:386px){
-    .topInfo > span{
-        display: none;
-    }
-}
 .logIN{
-    width: 200px;
+    width: 80px;
     line-height: 40px;
-    margin-right: 5%;
+    margin-right: 10%;
     display: flex;
-}
-@media screen and (max-width:386px){
-    .logIN{
-        width: 100%;
-        justify-content: flex-end;
-    }
+    justify-content: space-between;
 }
 .logIN span{
-    width: 70px;
-    text-align: center;
+    padding-left: 6px;
 }
 .logIN span:hover{
     background-color: white;
-    color: black;
-    margin: 0 15px;
 }
 .topNav{
     width: 500px;
@@ -74,10 +58,6 @@ body{
     border-radius: 3px;
     box-shadow: 1px 1px 1px #ccc;
 }
-.topNav ul li:hover{
-    background-color: #5F79D9;
-    color: white;
-}
 #middle{
     width: 80%;
     margin: 0 auto;
@@ -89,6 +69,7 @@ body{
     display: flex;
     justify-content: flex-end;
     margin-top: 50px;
+    
 }
 .middleNav .box{
     width: 150px;
@@ -96,20 +77,15 @@ body{
     float: left;
     position: relative;
 }
-@media screen and (max-width:750px){
-    .middleNav .box{
-        width: 20%;
-    }
-}
-.line{
+.middleNav .box .line{
     height: 10px;
     border-radius: 5px;
     line-height: 10px;
     text-align: center;
-    background-color: #dedede;
+    background: #dedede;
     color: white;
 }
-.circle{
+.middleNav .box .circle{
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -119,24 +95,15 @@ body{
     top: 10%;
     transform: translate(-15px, -15px);
     z-index: -1;
+
 }
-.line:hover{
-    background-color: #E17D00;
-}
-.line:hover~.circle{
-    background-color: #E17D00;
-}
-.line:hover~.menu{
-    color: #E17D00;
-}
-.menu{
+.middleNav .box .menu{
     text-align: center;
     margin-top: 20px;
-    color: #dedede;
 }
-
 .main{
     height: 800px;
+    /* background-color: silver; */
     color: #838384;
 }
 .main h3{
@@ -145,51 +112,23 @@ body{
     font-weight: 500;  
     margin-bottom: 20px; 
 }
-.table{
+.main .table{
     height: 700px;
     border: 1px solid #ccc;
 }
-input[type="radio"] {
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-}
-input[type="radio"]:checked + label {
-    display: inline-block;
-    box-sizing: content-box;
-    width: 3px;
-    height: 3px;
-    border: 6px solid #1d7ad9;
-    border-radius: 50%;
-}
-input[type="radio"] + label {
-    display: inline-block;
-    content: "";
-    width: 15px;
-    height: 15px;
-    border: 1px solid #1d7ad9;
-    margin-bottom: 3px;
-    border-radius: 50%;
-    vertical-align: middle;
-}
-label {
-    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-weight: 700;
-}
- .boxType{
+.main .boxType{
     height: 30px;
     padding-left: 20px;
     background-color: #F3F3F3;
 }
-.boxType >img{
+.main .boxType >img{
     vertical-align: middle;
 }
 .main .boxType span{
     line-height: 30px;
     color: #4C78DA;
 }
-/* .mainTop{
+.mainTop{
     display: flex;
     justify-content: space-between;
     height: 100px;
@@ -203,39 +142,11 @@ label {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-} */
-.mainTop{
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-
-form{
-    height: 60px;
-    line-height: 60px;
-    width: 600px;
-    position: relative;
-    margin-left: 4%;
+label{
+    font-weight: 500;
 }
-form .box{
-    width: 100px;
-    float: left;
-}
-select {
-    width: 120px;
-    height: 40px;
-    appearance: none;
-    outline: none;
-    color: #999;
-    border: 1px solid #e8e8e8;
-    border-radius: 4px;
-    background: url(./imgs/logo-4.png) no-repeat 85px 5px;
-    padding: 10px 50px 10px 10px;
-    margin-right: 2%;
-}
-/* .mainMiddle{
+.mainMiddle{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -252,20 +163,8 @@ select {
     width: 55%;
     margin: 20px 0;
 }
-
 .typeTwo input{
     width: 50px;
-} */
-
-
-input{
-    width: 60px;
-}
-.size-1{
-    display: flex;
-}
-.size-2{
-    display: flex;
 }
 .mainBottom{
     display: flex;
@@ -293,6 +192,7 @@ input{
     align-items: center;
 }
 button{
+    /* 去掉按键点击效果 */
     outline:none; 
     }
 .nextStep{
@@ -302,11 +202,9 @@ button{
     background-color: #e15053;
     color: white;
     border: 1px solid #e15053;
-    font-size: x-large;
-} 
-
-
+}
 #bottom{
+    height: 200px;
     background-color: #F9F9F9;
     color: #979797;
 }
@@ -315,7 +213,7 @@ button{
     padding-top: 48px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .job{
     width: 33%;
@@ -343,20 +241,6 @@ button{
 }
 .tel ul li{
     list-style: none;
-}
-@media screen and (max-width:1330px){
-    .job,
-    .about,
-    .tel{
-        width: 50%;
-    }
-}
-@media screen and (max-width:878px){
-    .job,
-    .about,
-    .tel{
-        width: 100%;
-    }
 }
 footer{
     height: 25px;
