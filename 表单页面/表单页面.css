@@ -210,6 +210,7 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FBFCFF;
 }
 
 form{
@@ -217,7 +218,7 @@ form{
     line-height: 60px;
     width: 600px;
     position: relative;
-    margin-left: 4%;
+    padding-left: 3%;
 }
 form .box{
     width: 100px;
@@ -257,17 +258,30 @@ select {
     width: 50px;
 } */
 
-
+.mainMiddle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBFCFF;
+}
+.size{
+    padding-left: 3%;
+}
+.size-select{
+    width: 140px;
+}
 input{
     width: 60px;
 }
 .size-1{
     display: flex;
+    padding-top: 4%;
 }
 .size-2{
     display: flex;
+    padding: 4% 0;
 }
-.mainBottom{
+/* .mainBottom{
     display: flex;
     justify-content: space-between;
     height: 100px;
@@ -285,12 +299,33 @@ input{
     justify-content: space-between;
     width: 55%;
     margin: 20px;
+} */
+.mainBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    background-color: #FBFCFF;
+    border: 1px solid #e8e8e8
 }
 .nextBox{
     height: 295px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.mainBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+}
+.box2{
+    width: 190px;
+}
+.box2 span{
+    font-size: 1.5rem;
+    padding-left: 8px;
 }
 button{
     outline:none; 
