@@ -3,10 +3,10 @@
     padding: 0;
 }
 body{
-    min-width: 353px;
+    min-width: 507px;
 }
 #top{
-    height: 110px;
+   
     background-color: #F9F9F9;
     overflow: hidden;
 }
@@ -48,8 +48,9 @@ body{
     color: black;
     margin: 0 15px;
 }
+
 .topNav{
-    width: 500px;
+    width: 33%;
     height: 70px;
     float: right;
     margin-right:10%;
@@ -75,14 +76,56 @@ body{
     box-shadow: 1px 1px 1px #ccc;
 }
 .topNav ul li:hover{
-    background-color: #5F79D9;
+    background-color: #4C78DA;
     color: white;
+}
+@media screen and (max-width:1000px){
+    .topNav{
+        display: none;
+    }
+}
+
+#accordion{
+    display: none;
+    margin: 0px;
+    overflow: hidden; 
+}
+#headingOne img {
+    float: right;
+    margin-right: 3%;
+}
+#collapseOne ul li {
+    list-style: none;
+    text-align: center;
+    font-size: large;
+    margin: 5px;
+}
+#collapseOne{
+    background-color:#4C78DA;
+}
+#collapseOne ul li{
+    list-style: none;
+    text-align: center;
+    color: white;
+    font-size: large;
+    margin: 5px;
+}
+#collapseOne ul li:hover{
+    cursor: pointer;
+    color: yellow;
+}
+.panel-default>.panel-heading {
+    height: 60px;
+    background-color: #4C78DA;
+}
+@media screen and (max-width:1000px){
+    #accordion{
+        display: block;
+    }
 }
 #middle{
     width: 80%;
     margin: 0 auto;
-    height: 1000px;
-   
 }
 .middleNav{
     height: 100px;
@@ -136,7 +179,6 @@ body{
 }
 
 .main{
-    height: 800px;
     color: #838384;
 }
 .main h3{
@@ -146,8 +188,8 @@ body{
     margin-bottom: 20px; 
 }
 .table{
-    height: 700px;
     border: 1px solid #ccc;
+    margin-bottom: 0;
 }
 input[type="radio"] {
     position: absolute;
@@ -177,7 +219,7 @@ label {
     margin-bottom: 5px;
     font-weight: 700;
 }
- .boxType{
+.boxType{
     height: 30px;
     padding-left: 20px;
     background-color: #F3F3F3;
@@ -189,40 +231,26 @@ label {
     line-height: 30px;
     color: #4C78DA;
 }
-/* .mainTop{
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
-    padding-right: 25px;
-    background-color: #FBFCFF;
-}
-.infomationType{
-    width: 30%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-} */
-.mainTop{
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FBFCFF;
-}
 
+.mainTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBFCFF;
+}
 form{
-    height: 60px;
-    line-height: 60px;
-    width: 600px;
+    padding: 2% 0 ;
     position: relative;
     padding-left: 3%;
 }
 form .box{
-    width: 100px;
+    width: 133px;
     float: left;
+}
+@media screen and (max-width:1052px){
+    form .box{
+        width: 53%;
+    }
 }
 select {
     width: 120px;
@@ -236,28 +264,6 @@ select {
     padding: 10px 50px 10px 10px;
     margin-right: 2%;
 }
-/* .mainMiddle{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 25px;
-    background-color: #FBFCFF;
-}
-
-.cnfirmSize{
-    width: 80%;
-}
-.typeTwo{
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
-    margin: 20px 0;
-}
-
-.typeTwo input{
-    width: 50px;
-} */
-
 .mainMiddle{
     display: flex;
     justify-content: space-between;
@@ -267,61 +273,56 @@ select {
 .size{
     padding-left: 3%;
 }
+@media screen and (max-width:1052px){
+    .size{
+        width: 35%;
+    }
+}
 .size-select{
-    width: 140px;
+    width: 200px;
+    padding-left: 10px;
 }
 input{
     width: 60px;
 }
 .size-1{
     display: flex;
-    padding-top: 4%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.size-select{
+    padding: 3% 0;
 }
 .size-2{
     display: flex;
-    padding: 4% 0;
-}
-/* .mainBottom{
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
+    flex-wrap: wrap;
     align-items: center;
-    padding-right: 25px;
-    background-color: #FBFCFF;
-    border-bottom:1px solid #ccc;
 }
-.infomationTypeThree{
-    display: flex;
-    justify-content: space-between;
-}
-.typeThree{
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
-    margin: 20px;
-} */
+
 .mainBottom{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
     background-color: #FBFCFF;
-    border: 1px solid #e8e8e8
 }
 .nextBox{
     height: 295px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #ccc;
+    margin-bottom: 4%;
 }
 .mainBox{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0 3%;
+
 }
 .box2{
     width: 190px;
+    padding: 8% 0;
 }
 .box2 span{
     font-size: 1.5rem;
@@ -329,7 +330,7 @@ input{
 }
 button{
     outline:none; 
-    }
+}
 .nextStep{
     width: 150px;
     height: 50px;
@@ -339,7 +340,6 @@ button{
     border: 1px solid #e15053;
     font-size: x-large;
 } 
-
 
 #bottom{
     background-color: #F9F9F9;
@@ -354,24 +354,26 @@ button{
 }
 .job{
     width: 33%;
-    height: 152px;
+    height: 177px;
 }
 .about{
     width: 33%;
-    height: 152px;
+    height: 177px;
 }
-
 .about a {
-    margin-right: 35px;
+    margin: 5%;
     text-decoration: none;
     color: #979797;
+}
+.about a:hover{
+    color: #4C78DA;
 }
 .aboutTop{
     margin-bottom: 20px;
 }
 .tel{
     width: 33%;
-    height: 152px;
+    height: 177px;
 }
 .tel ul{
     float: left;
@@ -391,6 +393,13 @@ button{
     .about,
     .tel{
         width: 100%;
+        text-align: center;
+        
+    }
+}
+@media screen and (max-width:878px){
+    .tel ul{
+        float: none;
     }
 }
 footer{

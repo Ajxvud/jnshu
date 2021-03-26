@@ -23,15 +23,39 @@
                 <span>注册</span>
             </div>
         </div>
-        <div class="topNav">
-            <ul>
-                <li>首页</li>
-                <li>在线定制</li>
-                <li>标准箱</li>
-                <li>品质保障</li>
-            </ul>
-        </div>
+        <div class="topNavBox">
+            <div class="topNav">
+                <ul>
+                    <li>首页</li>
+                    <li>在线定制</li>
+                    <li>标准箱</li>
+                    <li>品质保障</li>
+                </ul>
+            </div>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <img src="../桌游精灵/imgs/菜单.png" >
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <ul>
+                          <li>首页</li>
+                          <li>在线定制</li>
+                          <li>标准箱</li>
+                          <li>品质保障</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>    
     </div>
+    
 
     <div id="middle">
         <div class="middleNav">
@@ -71,17 +95,17 @@
                         <div class="box">
                             <input type="radio"  name="step" id="button-1" checked>
                             <label for="button-1"></label>
-                            <span>对口箱&nbsp;&nbsp;</span>
+                            <span>&#12288;对口箱&#12288;</span>
                         </div>
                         <div class="box">
                             <input type="radio" name="step" id="button-2">
                             <label for="button-2"></label>
-                            <span>飞机盒&nbsp;&nbsp;</span>
+                            <span>&#12288;飞机盒&#12288;</span>
                         </div>
                         <div class="box">
                             <input type="radio" name="step" id="button-3">
                             <label for="button-3"></label>
-                            <span>天地盖&nbsp;&nbsp;</span>
+                            <span>&#12288;天地盖&#12288;</span>
                         </div>
                     </form>
                     <select>
@@ -102,32 +126,35 @@
 
                 <div class="mainMiddle">
                     <div class="size">
+                        <!-- name将其划分为一组，name相同实现单选 -->
+                        <!-- for属性 规定与label里的哪个元素绑定  对应input里的 id 属性 -->
+                        <!-- value 属性为 input 元素设定值。也就是预先显示的文本 -->
                         <div class="size-1">
                             <input type="radio"  id="step-4" name="size" value="button-1" checked>
                             <label for="step-4"></label>
-                            <span>外径 &#12288;</span>
+                            <span>&#12288;外径 &#12288;</span>
                             <div class="size-select">
-                                长 <input class="size" type="text" name="length">&nbsp;mm&nbsp;
+                                长&#8194;<input class="size" type="text" name="length">&nbsp;mm
                             </div>
                             <div class="size-select">
-                                宽 <input class="size" type="text" name="width">&nbsp;mm&nbsp;
+                                宽&#8194;<input class="size" type="text" name="width">&nbsp;mm
                             </div>
                             <div class="size-select">
-                                高 <input class="size" type="text" name="height">&nbsp;mm&nbsp;
+                                高&#8194;<input class="size" type="text" name="height">&nbsp;mm
                             </div>
                         </div>
                         <div class="size-2">
                             <input type="radio" class="rdo" id="step-5" name="size" value="button-1">
                             <label for="step-5"></label>
-                            <span>内径 &#12288;</span>
+                            <span>&#12288;内径 &#12288;</span>
                             <div class="size-select">
-                                长 <input class="size" type="text" name="length">&nbsp;mm&nbsp;
+                                长&#8194;<input class="size" type="text" name="length">&nbsp;mm
                             </div>
                             <div class="size-select">
-                                宽 <input class="size" type="text" name="width">&nbsp;mm&nbsp;
+                                宽&#8194;<input class="size" type="text" name="width">&nbsp;mm
                             </div>
                             <div class="size-select">
-                                高 <input class="size" type="text" name="height">&nbsp;mm&nbsp;
+                                高&#8194;<input class="size" type="text" name="height">&nbsp;mm
                             </div>
                         </div>
                     </div>
@@ -149,28 +176,28 @@
                 <div class="mainBottom">
                     <div class="mainBox">
                         <div class="box2">
-                            <input type="radio"  name="step" id="button-1" checked>
-                            <label for="button-1"></label>
+                            <input type="radio"  name="species" id="button-4" checked>
+                            <label for="button-4"></label>
                             <span>三层A瓦优质&nbsp;&nbsp;</span>
                         </div>
                         <div class="box2">
-                            <input type="radio" name="step" id="button-2">
-                            <label for="button-2"></label>
+                            <input type="radio" name="species" id="button-5">
+                            <label for="button-5"></label>
                             <span>三层A瓦优质&nbsp;&nbsp;</span>
                         </div>
                         <div class="box2">
-                            <input type="radio" name="step" id="button-3">
-                            <label for="button-3"></label>
+                            <input type="radio" name="species" id="button-6">
+                            <label for="button-6"></label>
                             <span>三层A瓦优质&nbsp;&nbsp;</span>
                         </div>
                         <div class="box2">
-                            <input type="radio" name="step" id="button-3">
-                            <label for="button-3"></label>
+                            <input type="radio" name="species" id="button-7">
+                            <label for="button-7"></label>
                             <span>三层A瓦优质&nbsp;&nbsp;</span>
                         </div>
                         <div class="box2">
-                            <input type="radio" name="step" id="button-3">
-                            <label for="button-3"></label>
+                            <input type="radio" name="species" id="button-8">
+                            <label for="button-8"></label>
                             <span>三层A瓦优质&nbsp;&nbsp;</span>
                         </div>
                     </div>
@@ -184,13 +211,12 @@
                         <option value="4">查看详情</option>
                     </select>
                 </div>
-                <div class="nextBox">
-                    <button class="nextStep">下一步</button>
-                </div>
-
             </div> 
-     
-
+        </div>
+        <div class="nextBox">
+            <div class="btn"><button class="nextStep">下一步</button></div>
+        </div>  
+    </div>
         <div id="bottom">
             <div class="bottomRow">
                 <div class="job">51包装网——纸箱包装首选平台</div>

@@ -1,0 +1,10 @@
+@media screen and (max-width:890px){
+    .nav-wrap{
+        display: none;
+    }
+}
+@media screen and (max-width:890px){
+    #accordion{
+        display: block;
+    }
+}
