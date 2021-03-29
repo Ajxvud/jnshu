@@ -42,14 +42,12 @@ form img {
   margin-left: 15px;
   margin-right: 15px;
 }
-
-.ver {
+form .ver {
   width: 1px;
   height: 26px;
   margin-left: 0;
 }
-
-input {
+form input {
   border-style: none;
   outline: none;
   padding: 0;
