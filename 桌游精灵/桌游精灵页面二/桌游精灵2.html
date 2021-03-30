@@ -10,11 +10,35 @@
     <script src="https://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="./桌游精灵2.css">
+    <script type="text/javascript" src="./menu.js"></script>
+    
 </head>
 
-<body>
+<nav id="menu">
+    <div class="menu-list">
+        <img src="../imgs/notice.png" class="menu-list-left">
+        <img src="../imgs/more.png" class="menu-list-more">
+        <p>公告</p>
+    </div>
+    <div class="menu-list">
+        <img src="../imgs/setting.png" class="menu-list-left">
+        <img src="../imgs/more.png" class="menu-list-more">
+        <p>设置</p>
+    </div>
+    <div class="menu-list">
+        <img src="../imgs/about.png" class="menu-list-left">
+        <img src="../imgs/more.png" class="menu-list-more">
+        <p>关于</p>
+    </div>
+    <div class="menu-list">
+        <img src="../imgs/help.png" class="menu-list-left">
+        <img src="../imgs/more.png" class="menu-list-more">
+        <p>帮助</p>
+    </div>
+</nav>
+<div id="mainBox">
     <header>
-            <img class="menu" src="../imgs/menu.png" >
+        <input id="btnTest" type="image" src="../imgs/menu.png"  onclick="doHide()" width="50px" height="50px">
     </header>
    <div class="content">
     <div class="gameHistory">
@@ -49,14 +73,9 @@
             <div class="btn"><a href="../桌游精灵页面一/桌游精灵1.html">白痴版</a></div>
             <p>有1133个用户正在玩此款游戏</p>
             <img class="foot" src="../imgs/dot.png">
-            
         </div>
-
        </div>
-
    </div>
-
         
-    
-</body>
+</div>
 </html>

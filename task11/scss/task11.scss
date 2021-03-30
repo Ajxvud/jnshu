@@ -34,8 +34,6 @@ body{
     height: 40px;width: 100%;
     display: flex;
     align-items: center;
-}
-form{
     img{
         width: 13.5px;
         height: 20.5px;
@@ -53,6 +51,7 @@ form{
         height: 100%;
         width: calc(100% - 59.5px);}
 }
+
 .land{
     background-color: $bule;
 	width: 100%;

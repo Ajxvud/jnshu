@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	min-width: 720px;
+}
 @media only screen and (min-width:380px) and (max-width:630px) {
 	.picture{width: 120px;height: auto;}
 	.back{width:auto;height: 30px;}

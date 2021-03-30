@@ -1,23 +1,62 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: rgb(239,239,239);
 }
+/* 去掉点击时出现的点击效果 */
+input{
+    outline:none;
+    }
 @media screen and (max-width: 550px) {
     body{
         font-size: 80%;
     }
 }
+/* 左侧菜单栏 */
+#menu{
+	float: left;
+    /* 设置个高度撑起左侧上下距离（调试时满足大于100px就行），让浏览器自动填充 */
+    height: 1000px;
+    background-color: #fff;
+	max-width: 492px;
+	width: 76.8%;
+    display: block;
+}
+
+.menu-list {
+	text-align: left;
+	overflow: hidden;
+	font-size: 200%;
+	color: #29bde0;
+	border-bottom: 1px solid #d6d6d6;
+}
+.menu-list 	img {
+	display: inline-block;
+}
+.menu-list p {
+	overflow: hidden;
+	padding: 3.4% 0;
+}
+.menu-list-left {
+	float: left;
+	width: 13.6%;
+}
+.menu-list-more {
+	float: right;
+	margin-right: 6.7%;
+	width: 10.9%;
+}
+
+
 header{
     background-color: rgb(41,189,224);
     height: 70px;
 }
-.menu{
+#menuImg{
     width: 56px;
     height: 56px;
-    
     background-color: white;
 }
+
 .content{
     overflow: hidden;
     background-color: #f0f0f0;

@@ -1,21 +1,45 @@
-<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>如何使用hover同时让多个元素发生变化</title>
-	<link rel="stylesheet" href="./useless.css">
+  <meta charset="utf-8"/>
+  <title>显示/隐藏DIV</title>
+  <script>
+    function doHide(){
+          var oDiv = document.getElementById("menu");
+          var oButton = document.getElementById("btnTest")
+          if (oDiv.style.display == "none"){
+            oDiv.style.display = "block";
+          }else {
+            oDiv.style.display = "none";
+          }
+        }
+  </script>  
 </head>
 <body>
-	<div class="box1"></div>
-	<div class="box2"></div>
-	<div class="box3"></div>
-	<div class="box4"></div>
-	<div class="box5"></div>
+
+<nav id="menu">
+    <div class="menu-list">
+        <img src="../imgs/notice.png" class="menu-list-left">
+        <img src="../imgs/more.png" class="menu-list-more">
+        <p>公告</p>
+    </div>
+    <div class="menu-list">
+        <img src="../imgs/setting.png" class="menu-list-left">
+        <img src="../imgs/more.png" class="menu-list-more">
+        <p>设置</p>
+    </div>
+    <div class="menu-list">
+        <img src="../imgs/about.png" class="menu-list-left">
+        <img src="../imgs/more.png" class="menu-list-more">
+        <p>关于</p>
+    </div>
+    <div class="menu-list">
+        <img src="../imgs/help.png" class="menu-list-left">
+        <img src="../imgs/more.png" class="menu-list-more">
+        <p>帮助</p>
+    </div>
+</nav>
+
+
+<input id="btnTest" type="image" src="../桌游精灵/imgs/menu.png"  onclick="doHide()" width="40px" height="40px">
 </body>
 </html>
-
-
-
-  
-
-  

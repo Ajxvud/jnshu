@@ -35,19 +35,21 @@ body {
   display: flex;
   align-items: center;
 }
-
-form img {
+.num img,
+.mima img {
   width: 13.5px;
   height: 20.5px;
   margin-left: 15px;
   margin-right: 15px;
 }
-form .ver {
+.num .ver,
+.mima .ver {
   width: 1px;
   height: 26px;
   margin-left: 0;
 }
-form input {
+.num input,
+.mima input {
   border-style: none;
   outline: none;
   padding: 0;
