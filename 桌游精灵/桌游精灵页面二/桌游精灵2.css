@@ -19,7 +19,7 @@ input{
     background-color: #fff;
 	max-width: 492px;
 	width: 76.8%;
-    display: block;
+    display: none;
 }
 
 .menu-list {
