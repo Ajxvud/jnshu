@@ -1,0 +1,170 @@
+$blue :#88C0CE;
+$white: #FFFFFF;
+$fz23:23px;
+$btc:#999999 ;
+$fc:#A7A8AB;
+@mixin btnStyle{
+        width: 35%;
+        text-align: center;
+        margin: 5% 8% 2% 5%;
+        padding: 2% 0;
+        border-radius: 10px;
+        font-size: 1.75rem;
+        border: solid 3px #5fc0cd;
+}
+@mixin ml{
+    margin-left: 20px;
+}
+@mixin mr {
+    margin-right: 20px;
+}
+
+//上面是变量
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 590px;
+}
+.top{
+    height: 60px;
+    background-color: $blue;
+    position: relative;
+    overflow: hidden;
+    img{
+        float: left;
+        margin-left: 2%;
+        /* 图片再父元素高度不定的情况下，用绝对定位实现垂直居中 */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    h2{
+        text-align: center;
+        line-height: 60px;
+        color: $white;
+    }
+}
+.middle{
+    .main{
+        background: url(/task5/imgs/T5-2.png) no-repeat ;
+        /* 铺满整个父级元素 */
+        background-size:100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        color: $white;
+        padding-left: 3%;
+        .info{
+            width: 60%;
+            padding: 11% 0 11% 3%;
+            p{
+                font-size: $fz23;
+            }
+        }
+    }
+    
+}
+.bottom{
+    .skill{
+        border-bottom: 1px solid $btc;
+        display: flex;
+        justify-content: start;
+        padding: 2%;
+        p{
+            @include ml;
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+    .home{
+        display: flex;
+        align-items: center;
+        padding: 2%;
+        margin-left: 2%;
+        border-bottom: 1px solid $btc;
+
+        .homeBox{
+            width: 70px;
+            padding-right: 15px;
+            display: flex;
+            align-items: center;
+            img{
+                width: 20px;
+            }
+            span{
+                margin-left: 15%;
+            }
+        }
+        .homeEat{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+            img{
+                width: 20px;
+            }
+            span{
+                margin-left: 3%;
+            }
+        }
+        
+    }
+    .work,
+    .time,
+    .price,
+    .introduction{
+        display: flex;
+        justify-content: start;
+        padding:2%;
+        margin-left: 2%;
+        border-bottom: 1px solid $btc;
+        .workYear{
+            color: $fc;
+            @include mr;
+        }
+        .yearNum{
+            @include ml;
+        }
+        .workTime{
+            color: $fc;
+            @include mr;
+        }
+        .allDay{
+            @include ml;
+        }
+        .service{
+            color: $fc;
+            @include mr;
+        }
+        .servicePrice{
+            @include ml;
+            color: red;
+        }
+        .introductionSelf{
+            color: $fc;
+            @include mr;
+        }
+        .doSomething{
+            @include ml;
+        }
+    }
+
+}
+.main{
+    font-weight: 600;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    color: $white;
+    .message{
+        color: $blue;
+        @include btnStyle;
+    }
+    .phone{
+       @include btnStyle;
+       background-color: $blue;
+    }
+}

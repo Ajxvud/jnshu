@@ -1,120 +1,158 @@
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #f0f0f0; }
   
-  header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    padding: 8px 10px;
-    background-color: #29bde0; }
-  
-  .menu {
-    border: 0;
-    border-radius: 4px;
-    background-color: transparent;
-    outline: none; }
-    .menu:hover {
-      background-color: rgba(0, 0, 0, 0.2);
-      cursor: pointer; }
-  
-  .icon-bar {
-    display: block;
-    width: 25px;
-    padding: 1px 0;
-    margin: 5px 0;
-    background: #fff; }
-  
-  main {
-    position: absolute;
-    top: 47px;
-    width: 100%;
-    padding: 0 20px;
-    margin-bottom: 50px;
-    box-sizing: border-box; }
-  
-  .f16, .lastgame, .gamechoice-title, .gamevision {
-    font-size: 16px; }
-  
-  .lastgame {
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #9a9999;
-    margin: 15px 0;
-    background-color: #fff;
-    color: #9a9999; }
-    .lastgame:hover {
-      cursor: pointer; }
-  
-  .icon-aheard {
-    position: absolute;
-    top: 21.5px;
-    right: 15px;
-    width: 15px;
-    height: 15px;
-    border: 3px solid #c1c0c0;
-    border-left: transparent;
-    border-bottom: transparent;
-    transform: rotate(45deg); }
-  
-  .gamechoice {
-    position: relative;
-    border: 1px solid #c1c0c0;
-    background-color: #fff; }
-  
-  .gamechoice-title {
-    width: 100%;
-    padding: 12px;
-    border-bottom: 1px solid #fbb435;
-    box-sizing: border-box;
-    color: #fbb435; }
-  
-  .gamevision-wrap {
-    padding: 15px 30px; }
-    .gamevision-wrap > p {
-      padding: 5px;
-      text-align: center;
-      color: #9a9999; }
-  
-  .gamevision {
-    width: 100%;
-    padding: 35px;
-    border: 0;
-    background-color: #29bde0;
-    color: #fff;
-    outline: none; }
-    .gamevision:hover {
-      cursor: pointer; }
-  
-  .triangle {
-    position: absolute;
-    top: calc(50% - 15px);
-    right: 5px;
-    border-left: 15px solid #fbb435;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent; }
-    .triangle:hover {
-      cursor: pointer; }
-  
-  .slide-dot {
-    display: flex;
-    justify-content: center; }
-  
-  .slide-dot-all, .slide-dot-1, .slide-dot-2 {
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    border-radius: 5px; }
-    .slide-dot-all:hover, .slide-dot-1:hover, .slide-dot-2:hover {
-      cursor: pointer; }
-  
-  .slide-dot-1 {
-    background-color: #29bde0; }
-  
-  .slide-dot-2 {
-    background-color: #f0f0f0; }
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+header {
+  height: 50px;width: 100%;
+  background-color: #5fc0cd;
+  position: fixed;
+  z-index: 999999;
+}
+main {
+  height: 100%;
+}
+.back {
+  width: 15px;height: 15px;
+  background: url(task5images/1.png) no-repeat;
+  background-size: auto 15px;
+  position: absolute ; left:15px; top: 15px;
+}
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  padding-top: 14px;
+}
+.pic {
+  width: 90px; height: 90px;
+  background: url(task5images/3.png) no-repeat;
+  background-size: 90px auto;
+  position: absolute;
+  left: 20px; top: 110px;
+  z-index: 2;
+}
+.info-bg {
+  width: 100%;height: 240px;
+  background: url(task5images/2.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 1;
+}
+.info {
+  position: absolute;
+  left: 130px;top: 125px;
+  z-index: 2;
+  color: white;
+}
+.info-address {
+  position: absolute;
+  left: 130px;top:145px;
+  z-index: 2;
+  color: white;
+  font-size: 14px;
+}
+.info-address img {
+  width: 12px;height: auto;
+  margin: 5px 5px 0 0;
+}
+.details {
+  position: absolute;
+  left: 0;top:250px;
+  padding-bottom: 18%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+li {
+  padding: 12px 10px 12px 0;
+  margin-left: 15px;
+  border-bottom: 2px solid #eff0f4;
+  display: flex;
+  align-items: center;
+}
+.line1 {
+  width: 4px;height: 15px;
+  background-color: #5fc0cd;
+  margin-right: 5px;
+  z-index: 5;
+}
+.skills {
+  padding: 8px 0 10px 10px;
+  margin-left: 0;
+  font-weight: bold;
+}
+.remark {
+  padding: 12px 0;
+  margin-left: 15px ;
+  font-weight: bold;
+}
+.remark img {
+  width: 16px;height: auto;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.info-title {
+  position: absolute;left: 10px;
+  color: #999999;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.info-details {
+  margin-left: 90px;
+  margin-right: 10px;
+  color: black;
+  font-weight: bold;
+}
+.line2 {
+  position: absolute;left: 90px;
+  width: 1px;height: 25px;z-index: 5;
+  background-color: #999999;
+}
+.price-color {
+  color: #e26163;
+}
+footer {
+  position: fixed; bottom: 0; z-index: 999999;
+  width: 100%;height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-left {
+  flex-basis: 10px;
+  flex-grow: 1;
+  height: 70%;
+  margin: 5px 5px 5px 10px;
+  border: 2px solid #5fc0cd;
+  background-color: white;
+  color: #5fc0cd;
+  border-radius: 7px;
+}
+.button-right {
+  flex-basis: 10px;
+  flex-grow: 1;
+  height: 70%;
+  margin: 5px 10px 5px 5px;
+  border: 2px solid #5fc0cd;
+  background-color: #5fc0cd;
+  color: white;
+  border-radius: 7px;
+}
+.blank {
+  height: 9%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  z-index: 4;
+}

@@ -89,14 +89,12 @@ span {width: 12px;
 	margin-right: 10px;
 	margin-left: 15px;
 	background-position: -132px 0;}
-.adress
-span {width: 10px;
+.adress span {width: 10px;
 	height: 12px;
 	margin-right: 11px;
 	margin-left: 16px;
 	background-position: -122px 0;}
-.price
-span {display: inline-block;
+.price span {display: inline-block;
 	width: 10px;
 	height: 17px;
 	margin: 0 15px 0 10px;
@@ -107,13 +105,15 @@ span {display: inline-block;
 .btn {background-image: url(./sprite.png);
 	background-repeat: no-repeat;
 	border-width: 0;}
-#home {width: 23px;
+
+/* 将id选择器去掉，选择用nth-child(n)选择器匹配父元素中的第n个子元素 */
+.footer :nth-child(1){width: 23px;
 	height: 37px;
 	background-position: -68px 0;}
-#write {width: 47px;
+.footer :nth-child(2) {width: 47px;
 	height: 47px;
 	background-position: 0 0;}
-#my {width: 21px;
+.footer :nth-child(3) {width: 21px;
 	height: 39px;
 	background-position: -47px 0;}
 .footer

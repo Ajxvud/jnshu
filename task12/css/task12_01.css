@@ -1,0 +1,185 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 590px;
+}
+
+.top {
+  height: 60px;
+  background-color: #88C0CE;
+  position: relative;
+  overflow: hidden;
+}
+.top img {
+  float: left;
+  margin-left: 2%;
+  /* 图片再父元素高度不定的情况下，用绝对定位实现垂直居中 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.top h2 {
+  text-align: center;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.middle .main {
+  background: url(/task5/imgs/T5-2.png) no-repeat;
+  /* 铺满整个父级元素 */
+  background-size: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #FFFFFF;
+  padding-left: 3%;
+}
+.middle .main .info {
+  width: 60%;
+  padding: 11% 0 11% 3%;
+}
+.middle .main .info p {
+  font-size: 23px;
+}
+
+.bottom .skill {
+  border-bottom: 1px solid #999999;
+  display: flex;
+  justify-content: start;
+  padding: 2%;
+}
+.bottom .skill p {
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.bottom .home {
+  display: flex;
+  align-items: center;
+  padding: 2%;
+  margin-left: 2%;
+  border-bottom: 1px solid #999999;
+}
+.bottom .home .homeBox {
+  width: 70px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+}
+.bottom .home .homeBox img {
+  width: 20px;
+}
+.bottom .home .homeBox span {
+  margin-left: 15%;
+}
+.bottom .home .homeEat {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.bottom .home .homeEat img {
+  width: 20px;
+}
+.bottom .home .homeEat span {
+  margin-left: 3%;
+}
+.bottom .work,
+.bottom .time,
+.bottom .price,
+.bottom .introduction {
+  display: flex;
+  justify-content: start;
+  padding: 2%;
+  margin-left: 2%;
+  border-bottom: 1px solid #999999;
+}
+.bottom .work .workYear,
+.bottom .time .workYear,
+.bottom .price .workYear,
+.bottom .introduction .workYear {
+  color: #A7A8AB;
+  margin-right: 20px;
+}
+.bottom .work .yearNum,
+.bottom .time .yearNum,
+.bottom .price .yearNum,
+.bottom .introduction .yearNum {
+  margin-left: 20px;
+}
+.bottom .work .workTime,
+.bottom .time .workTime,
+.bottom .price .workTime,
+.bottom .introduction .workTime {
+  color: #A7A8AB;
+  margin-right: 20px;
+}
+.bottom .work .allDay,
+.bottom .time .allDay,
+.bottom .price .allDay,
+.bottom .introduction .allDay {
+  margin-left: 20px;
+}
+.bottom .work .service,
+.bottom .time .service,
+.bottom .price .service,
+.bottom .introduction .service {
+  color: #A7A8AB;
+  margin-right: 20px;
+}
+.bottom .work .servicePrice,
+.bottom .time .servicePrice,
+.bottom .price .servicePrice,
+.bottom .introduction .servicePrice {
+  margin-left: 20px;
+  color: red;
+}
+.bottom .work .introductionSelf,
+.bottom .time .introductionSelf,
+.bottom .price .introductionSelf,
+.bottom .introduction .introductionSelf {
+  color: #A7A8AB;
+  margin-right: 20px;
+}
+.bottom .work .doSomething,
+.bottom .time .doSomething,
+.bottom .price .doSomething,
+.bottom .introduction .doSomething {
+  margin-left: 20px;
+}
+
+.main {
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
+footer .message {
+  color: #88C0CE;
+  width: 35%;
+  text-align: center;
+  margin: 5% 8% 2% 5%;
+  padding: 2% 0;
+  border-radius: 10px;
+  font-size: 1.75rem;
+  border: solid 3px #5fc0cd;
+}
+footer .phone {
+  width: 35%;
+  text-align: center;
+  margin: 5% 8% 2% 5%;
+  padding: 2% 0;
+  border-radius: 10px;
+  font-size: 1.75rem;
+  border: solid 3px #5fc0cd;
+  background-color: #88C0CE;
+}
+
+/*# sourceMappingURL=task12_01.css.map */
