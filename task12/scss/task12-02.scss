@@ -1,4 +1,4 @@
-@import "sass.scss";
+/* @import "sass.scss"; */
 html {
 	font-size: 625%;
     
@@ -161,19 +161,19 @@ footer {
 	}
 	.home .icon {
 		display: block;
-		@include bg(icon, 0.4rem, 0.3rem, 0.25rem);
+		background: url(/task12/imgs/icon.png) no-repeat;
 		margin: 0 auto;
 		#{$bg}-position: -4px -90px;
 	}
 	.revise .icon {
 		display: block;
-		@include bg(icon, 0.4rem, 0.45rem, 0.45rem);
+		background: url(/task12/imgs/icon.png) no-repeat;
 		#{$bg}-position: 5px -156px;
 		margin: 0 auto;
 	}
 	.user .icon {
 		display: block;
-		@include bg(icon, 0.4rem, 0.3rem, 0.25rem);
+		background: url(/task12/imgs/icon.png) no-repeat;
 		#{$bg}-position: -4px -127px;
 		margin: 0 auto;
 	}
