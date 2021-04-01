@@ -1,64 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <title>个人主页</title>
-    <link rel="stylesheet" type="text/css" href="./useless.css">
+
+  <title>下拉菜单实例|W3Cschool教程(w3cschool.cn)</title>
+  <meta charset="utf-8">
+  <style>
+  .dropdown {
+      width: 33%;
+      background-color: aqua;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 100%;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  </style>
+    
 </head>
 <body>
-<header>
-    <div class="back"></div>
-    <div class="title">个人主页</div>
-</header>
-<main>
-    <div class="pic"></div>
-    <div class="info-bg"></div>
-    <div class="info">许士林 55岁</div>
-    <div class="info-address">
-        <img src="task5images/4.png">
-        京城 · 四方 · 报纸林
-    </div>
-<div class="details">
-    <ul>
-        <li class="skills">
-        <div class="line1"></div>
-            专业技能
-        </li>
-        <li class="remark">
-            <img src="task5images/5.png">住家   <img src="task5images/5.png">不含餐
-        </li>
-        <li>
-            <div class="info-title">从业年限</div>
-            <div class="line2"></div>
-            <div class="info-details">0-3年</div>
-        </li>
-        <li>
-            <div class="info-title">工作时间</div>
-            <div class="line2"></div>
-            <div class="info-details">全天</div>
-        </li>
-        <li>
-            <div class="info-title">服务价格</div>
-            <div class="line2"></div>
-            <div class="info-details">
-                <div class="price-color">
-                25元/小时
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class="info-title">自我介绍</div>
-            <div class="line2"></div>
-            <div class="info-details"> 可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</div>
-        </li>
-    </ul>
+
+<div class="dropdown">
+  <p>所在地</p>
+  <div class="dropdown-content">
+    <p>北京</p>
+    <p>上海</p>
+    <p>上海</p>
+  </div>
 </div>
-</main>
-<footer>
-    <button class="button-left">留言</button>
-    <button class="button-right">电话联系</button>
-</footer>
-<div class="blank"></div>
+
 </body>
+
 </html>
