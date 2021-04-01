@@ -7,15 +7,15 @@ $bg: background;
 	transform: translateY(-50%);
 }
 @mixin bg($name, $size, $w, $h ,$suffix: png){
-	background: url(/task12/imgs/#{$name}.#{$suffix}) no-repeat;
-	background-size: $size;
-	width: $w;
-	height: $h;
+    background: url(../imgs/#{$name}.#{$suffix}) no-repeat;
+    background-size: $size;
+    width: $w;
+    height: $h;
 }
 @mixin icon($top){
 	content: " ";
 	display: inline-block;
-	#{$bg}: url(/task12/imgs/icon.png) no-repeat -5px $top;
+	#{$bg}: url(../imgs/icon.png) no-repeat -5px $top;
 	#{$bg}-size: 0.4rem;
 	width: 0.22rem;
 	height: 0.22rem;
@@ -184,6 +184,7 @@ footer {
 	}
 	.home .icon {
 		display: block;
+       
 		@include bg(icon, 0.4rem, 0.3rem, 0.25rem);
 		margin: 0 auto;
 		#{$bg}-position: -4px -90px;
