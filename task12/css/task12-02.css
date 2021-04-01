@@ -95,11 +95,6 @@ main {
 .class-list .class-item:last-child {
   border-right: none;
 }
-@media (max-width: 768px) {
-  .class-list .class-item {
-    padding-left: 10vw;
-  }
-}
 
 .content-list {
   position: relative;
