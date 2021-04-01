@@ -1,3 +1,4 @@
+//定义变量
 $blue :#88C0CE;
 $white: #FFFFFF;
 $fz23:23px;
@@ -19,7 +20,7 @@ $fc:#A7A8AB;
     margin-right: 20px;
 }
 
-//上面是变量
+
 *{
     margin: 0;
     padding: 0;
@@ -48,7 +49,7 @@ body{
 }
 .middle{
     .main{
-        background: url(/task5/imgs/T5-2.png) no-repeat ;
+        background: url(../imgs/T5-2.png) no-repeat ;
         /* 铺满整个父级元素 */
         background-size:100%;
         display: flex;
