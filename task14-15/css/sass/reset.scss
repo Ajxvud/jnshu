@@ -1,0 +1,49 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	&:before,
+	&:after {
+	  -webkit-box-sizing: border-box;
+	     -moz-box-sizing: border-box;
+	          box-sizing: border-box;
+	}
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin: 0;
+}
+body {
+	line-height: 1;
+	font: 16px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color: #333;
+    background-color: #fafafa;
+}
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}

@@ -1,43 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-  <title>下拉菜单实例|W3Cschool教程(w3cschool.cn)</title>
-  <meta charset="utf-8">
-  <style>
-  .dropdown {
-      width: 33%;
-      background-color: aqua;
-      position: relative;
-      display: inline-block;
-      text-align: center;
-  }
-
-  .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      width: 100%;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  
-  .dropdown:hover .dropdown-content {
-      display: block;
-  }
-  </style>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+<script>
+  var a = 20;
+ /*  b = a++;
+  console.log(a) //b = 20 //a = 21 此时a++为原变量的值20 b= 20 ，但是a已经+1了变为21
+   */
+  b = ++a;
+  console.log(a) //b = 21 //a=21 ++a为新值原变量为20 ++a为它+1 也就是说++a已经为21 b=a++=21 所以b=21 a=21
+</script>
 <body>
-
-<div class="dropdown">
-  <p>所在地</p>
-  <div class="dropdown-content">
-    <p>北京</p>
-    <p>上海</p>
-    <p>上海</p>
-  </div>
-</div>
-
+  
 </body>
-
 </html>
