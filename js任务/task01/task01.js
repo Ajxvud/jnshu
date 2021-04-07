@@ -3,6 +3,7 @@ var list = document.getElementsByTagName('li');
 var run = document.getElementById('btn1');
 var stop = document.getElementById('btn2');
 var time;
+//选3个li标签
 function begin(one, two, three) {
     if (one == two || two == three || one == three) {
         if (one == two) {
@@ -14,12 +15,13 @@ function begin(one, two, three) {
         }
         begin(one, two, three);
     } else {
+        //调用colors函数，函数color返回值为rgb
         list[one].style.background = 'rgb' + colors();
         list[two].style.background = 'rgb' + colors();
         list[three].style.background = 'rgb' + colors();
     }
-    console.log()
-}
+    // console.log() 
+} 
 
 //生成随机颜色
 function colors() {
@@ -27,12 +29,12 @@ function colors() {
     let r = Math.floor(Math.random() * 256);
     let g = Math.floor(Math.random() * 256);
     let b = Math.floor(Math.random() * 256);
+    //引入变量作为字符串形式："+变量+",原理是 在引号中 引号的内容为引用，单双引号不能混用
     rgb = '('+r+','+g+','+b+')';
     return rgb;
 }
 
 run.onclick = function () {
-    //停止定时操作
     clearInterval(time);
     time = setInterval(function () {
         for (var i = 0; i < list.length; i++) {
