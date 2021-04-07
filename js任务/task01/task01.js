@@ -3,7 +3,7 @@ var list = document.getElementsByTagName('li');
 var run = document.getElementById('btn1');
 var stop = document.getElementById('btn2');
 var time;
-//选3个li标签
+//选3个li标签，保证3个数不相同
 function begin(one, two, three) {
     if (one == two || two == three || one == three) {
         if (one == two) {
@@ -37,6 +37,7 @@ function colors() {
 run.onclick = function () {
     clearInterval(time);
     time = setInterval(function () {
+        //先将所有背景色变为原色（#FFA600），再上色
         for (var i = 0; i < list.length; i++) {
             list[i].style.background = '';
         }
@@ -48,6 +49,7 @@ run.onclick = function () {
 }
 stop.onclick = function () {
     clearInterval(time);
+    //循环i从0开始到9，依次将li标签的背景颜色去掉，也就是=为''要表达的意思
     for (var i = 0; i < list.length; i++) {
         list[i].style.background = '';
     }
