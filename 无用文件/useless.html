@@ -1,45 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <title>显示/隐藏DIV</title>
-  <script>
-    function doHide(){
-          var oDiv = document.getElementById("menu");
-          var oButton = document.getElementById("btnTest")
-          if (oDiv.style.display == "none"){
-            oDiv.style.display = "block";
-          }else {
-            oDiv.style.display = "none";
-          }
-        }
-  </script>  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="/js任务/jquery-3.6.0.js"></script>
 </head>
 <body>
-
-<nav id="menu">
-    <div class="menu-list">
-        <img src="../imgs/notice.png" class="menu-list-left">
-        <img src="../imgs/more.png" class="menu-list-more">
-        <p>公告</p>
-    </div>
-    <div class="menu-list">
-        <img src="../imgs/setting.png" class="menu-list-left">
-        <img src="../imgs/more.png" class="menu-list-more">
-        <p>设置</p>
-    </div>
-    <div class="menu-list">
-        <img src="../imgs/about.png" class="menu-list-left">
-        <img src="../imgs/more.png" class="menu-list-more">
-        <p>关于</p>
-    </div>
-    <div class="menu-list">
-        <img src="../imgs/help.png" class="menu-list-left">
-        <img src="../imgs/more.png" class="menu-list-more">
-        <p>帮助</p>
-    </div>
-</nav>
-
-
-<input id="btnTest" type="image" src="../桌游精灵/imgs/menu.png"  onclick="doHide()" width="40px" height="40px">
+  
 </body>
+<script>
+  console.log('jQuery版本：' + $.fn.jquery);
+</script>
 </html>

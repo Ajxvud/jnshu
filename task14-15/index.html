@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>task14</title>
 	<link rel="stylesheet" href="css/main.css">
+	<script src="../js任务/jquery-3.6.0.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
@@ -29,18 +30,27 @@
 				<a class="logo" href="index.html">
 					<img src="image/logo.png" alt="logo">
 				</a>
-				<div class="navbar-toggle">
-					<button class="navbar-btn">
+				<div class="navbar-toggle" >
+					<button class="navbar-btn" onClick="showdiv()">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+					
 				</div>
 				<ul class="navbar-list">
 					<li class="item"><a href="index.html">首页</a></li>
 					<li class="item"><a href="profession.html">职业</a></li>
 					<li class="item"><a href="enterprise.html">企业</a></li>
 					<li class="item"><a href="#">关于</a></li>
+				</ul>
+			</div>
+			<div class="menu">
+				<ul>
+					<li>首页</li>
+					<li>职业</li>
+					<li>企业</li>
+					<li>关于</li>
 				</ul>
 			</div>
 		</div>
@@ -428,6 +438,6 @@
 		}
 	})
 </script>
-<script src="js/carousel.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>
