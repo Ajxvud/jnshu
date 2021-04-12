@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js task02_1</title>
+    <link rel="stylesheet" href="./css/task02_01.css">
+    <script src="../jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <!-- 左侧导航栏 -->
+        <ul id="menu">
+            <li>
+                <a href="#" class="menu-font">公告</a>
+            </li>
+            <li href="#">
+                <a href="#" class="menu-font">设置</a>
+            </li>
+            <li>
+                <a href="#" class="menu-font">帮助</a>
+            </li>
+            <li>
+                <a href="#" class="menu-font">关于</a>
+            </li>
+        </ul>
+        <div class="all">
+            <header>
+                <input id="btnTest" type="image" src="../task02/images/task02_menu.png"  onclick="doHide()" width="50px" height="50px"> 
+            </header>
+            <div class="main">
+                <div class="lastGame">
+                    <div class="lastGame-guess">上次游戏：捉鬼猜词版</div>
+                    <img src="../task02/images/task02_go.png" alt="">
+                </div>
+                <div class="mobile">
+                    <div class="game">
+                        <div class="ghostHunt">杀人游戏</div>
+                    </div>
+                    <div class="gameType">
+                        <button class="main-one">警版</button>
+                        <p class="main-two">有1133个用户正在玩此款游戏</p>
+                        <button class="main-three">猜词版
+                            <a class="main-three-img" href="./task02_2.html"></a>
+                            <a class="main-four-img" href="./task02_2.html"></a>
+                        </button>
+                        <p class="main-four">有1133个用户正在玩此款游戏</p>
+                        <button class="main-five">3.0版</button>
+                        <p class="main-six">有1133个用户正在玩此款游戏</p>
+                        
+                    <div class="circle">
+                        <span id="left"></span>
+                        <span></span>
+                    </div>
+                    </div>  
+                </div>
+
+                <div class="mobileBox">
+                    <div class="game">
+                        <div class="ghostHunt">捉鬼游戏</div>
+                    </div>
+                    <div class="gameType">
+                        <button class="main-one">简化版</button>
+                        <p class="main-two">有1133个用户正在玩此款游戏</p>
+                        <button class="main-three">猜词版
+                            <a class="main-three-img" href="./task02_2.html"></a>
+                        </button>
+                        <p class="main-four">有1133个用户正在玩此款游戏</p>
+                        <button class="main-five">白痴版</button>
+                        <p class="main-six">有1133个用户正在玩此款游戏</p>
+                    <div class="circle">
+                        <span></span>
+                        <span id="right"></span>
+                        
+                    </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="../task02/js/menu.js"></script>
+</html>

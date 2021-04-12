@@ -1,0 +1,194 @@
+$bgc-blue:rgb(117,188,223);
+$bac-white:white;
+$border-style:1px solid #D8D8D8;
+@mixin c-style {
+    width: 96%;
+    margin: 2% auto;
+}
+@mixin fl {
+    float: left;
+}
+@mixin text-center {
+    text-align: center;
+}
+@mixin po {
+    width: 10px;
+    height: 10px;
+    background-color: #D79D23;
+}
+@mixin pb {
+    width: 10px;
+    height: 10px;
+    background-color: #75BCDF;
+}
+@mixin fz20 {
+    font-size: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 600px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bgc-blue;
+    color: white;
+    font-size: 2rem;
+    margin-top: 2%;
+    padding: 2% 0;
+    img{
+        margin:0 1%;
+    }
+}
+.main{
+    background-color: #EFEFEF;
+    overflow: hidden;
+    .matchBox{
+        @include c-style();
+        overflow: hidden;
+        .f{
+            width: 15%;
+            height: 335px;
+            background-color: $bac-white;
+            border-radius: 3px;
+            @include text-center();
+            float: left;
+            border-right: $border-style;
+            .s{
+                display: inline-block;
+                height: 100%;  // 子元素和父元素等高
+                margin: 0;  // 去除p标签默认样式
+                text-align: center;  // 上下居中
+                letter-spacing: 3px;  // 文字之间的间距
+                -webkit-writing-mode: vertical-lr;
+                -ms-writing-mode: lr-tb;
+                writing-mode: vertical-lr;  // 垂直由左向右排列多行
+            }
+        }
+        .matchType{
+            @include fl();
+            width: 84%;
+            height: 250px;
+            padding: 3% 0;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: $bac-white;
+            .people{
+                width: 50%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                color: #9F9F9F;
+                @include fz20();
+                .patternOrange{
+                    @include po();
+                }
+                .patternBlue{
+                    @include pb();
+                }
+            }
+            
+        }
+        .seting{
+           @include fl();
+           @include text-center();
+           @include fz20();
+           width: 84%;
+           height: 50px;
+           background-color: $bac-white;
+           color: $bgc-blue;
+           line-height: 50px;
+           border-top: $border-style;
+           img{
+               margin-left: 1%;
+           }
+        }
+    }
+    .phraseBox{
+        @include c-style();
+        height: 200px;
+        background-color: $bac-white;
+        .phrase{
+            margin: 0 4%;
+            height: 80px;
+            border-bottom: 2px solid #EFEFEF;
+            color: #EFEFEF;
+            font-size: 25px;
+            line-height: 80px;
+        }
+    }
+    .peopleNum{
+        @include c-style();
+        background-color: $bac-white;
+        height: 200px;
+        form{
+            display: flex;
+            align-items: center;
+            @include fz20();
+            padding: 5%;
+            letter-spacing: 3px; //字体间隙
+            color: #464646;
+            input{
+                width: 40px;
+                height: 30px;
+                background-color: #F4F4F4;
+                border: none;
+                margin: 0 3%;
+                color: #E5B047;
+                @include fz20();
+            }
+            span{
+                color: #E5B047;
+                font-size: 16px;
+            }
+        }
+        .btnBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5% 0;
+            #btn{
+                width: 17px;
+                height: 17px; 
+            }
+            #btnMiddle{
+                -webkit-appearance: none;/*清除系统默认样式*/
+                background-color: #fab344;
+                outline: none;
+                cursor: pointer;
+                border-radius: 5px;
+                width: 70%;
+                height: 5px;
+                margin: 0 3%;
+            }
+            /*拖动块的样式*/
+            input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;/*清除系统默认样式*/
+                width: 3rem;
+                height: 2rem;
+                border-radius: 5px;
+                border: 2px solid #fab344;
+                background: url(../images/11.png) no-repeat;
+                background-position-x: -3px;
+                cursor: pointer;
+            }
+        }
+    }
+    .brand{
+        @include c-style();
+        button{
+            font-size: 2rem;
+            width: 100%;
+            height: 100px;
+            color: white;
+            background-color: #E5B047;
+            outline: none;
+            border: none;
+        }
+    }
+}

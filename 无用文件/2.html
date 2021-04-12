@@ -2,35 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
+    <meta name="Keywords" content="关键字,关键词">
+    <meta name="Description" content="描述和简介">
+    <title>Title</title>
+    <style type="text/css">
+        *{margin:0;padding:0;}
+        body,ul,li,ol,dl,dd,p,h1,h2,h3,h4,h5,h6{ margin:0;}
+        a{text-decoration:none;}
+        img{border:none;}
+        ol,ul{list-style:none;}
+        #box{
+            position: relative;
         }
-        .box1{
-            width: 1000px;
-            height: 500px;
-            margin: 0 auto;
-            background-color: red;
-        }
-        .box2{
-            width: 50px;
-            height: 100px;
-            background-color: green;
+        #box img{
             position: absolute;
-            left: 50%;
-            top: 50%;
-            
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        #box #img1{
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div class="box1">
-        <div class="box2"></div>
+    <div id="box">
+        <img id="img1" src="images/1.jpg" alt="">
+        <img id="img2" src="images/2.jpg" alt="">
     </div>
-    
+
+    <script>
+        var oImg1 = document.getElementById("img1"),
+            oImg2 = document.getElementById("img2");
+
+        oImg1.onclick = function (){
+            this.style.display = "none";
+            oImg2.style.display = "block";
+        };
+
+        oImg2.onclick = function (){
+            this.style.display = "none";
+            oImg1.style.display = "block";
+        };
+
+    </script>
 </body>
+</html>
+
+    </body>
 </html>
