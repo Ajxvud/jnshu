@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -45,6 +46,7 @@ header {
 
 .main {
   background-color: #EFEFEF;
+  height: 825px;
   position: relative;
   overflow: hidden;
 }
@@ -117,6 +119,7 @@ header {
   height: 55px;
   background: url("../images/task02_next.png") 100%;
   transform: rotateY(180deg);
+  /* 水平镜像旋转 */
   right: 454px;
 }
 .main .gameType .main-two,
@@ -144,10 +147,16 @@ header {
   cursor: pointer;
   background-color: #94D0E8;
 }
+.main .mobile {
+  position: absolute;
+  top: 202px;
+  left: 59px;
+}
 .main .mobileBox {
   position: absolute;
   top: 202px;
   left: 59px;
+  display: none;
 }
 
 /*# sourceMappingURL=task02_01.css.map */

@@ -45,19 +45,20 @@ ul{
             border-top: 5px solid #69d1e9;
             border-right: 5px solid #69d1e9;
             transform: rotate(45deg);
-          }
-          
+        } 
     }  
 }
 
 header{
     display: flex;
+    
     height: 80px;
     background-color: $bgc-blue;
     align-items: center;
 }
 .main{
     background-color: #EFEFEF;
+    height: 825px;
     position: relative;
     overflow: hidden; 
     .lastGame{
@@ -113,7 +114,7 @@ header{
         }
         .main-four-img {
            @include m-sctyle();
-            transform: rotateY(180deg);
+            transform: rotateY(180deg); /* 水平镜像旋转 */
             right: 454px;
         }
         .main-two,
@@ -142,11 +143,17 @@ header{
             }
         }
     }
+    .mobile{
+        
+        position: absolute;
+        top: 202px;
+        left: 59px;
+    }
     .mobileBox{
         position: absolute;
         top: 202px;
         left: 59px;
-        
+        display: none;
     }
 }
 
