@@ -99,6 +99,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
+  margin-bottom: 100px;
 }
 .main .mainBox {
   width: 26%;
@@ -111,6 +112,7 @@ body {
   padding: 8vw 0;
   font-size: 3vw;
   text-align: center;
+  color: #565656;
 }
 .main .mainBox .number {
   text-align: center;
