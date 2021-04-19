@@ -1,0 +1,47 @@
+/*
+Error: File to import not found or unreadable: main.
+       Load path: D:/vscode/code/js任务/task02/sass
+        on line 1 of D:\vscode\code\js任务\task02\sass\task04.scss
+
+1: @import "main"
+
+Backtrace:
+D:\vscode\code\js任务\task02\sass\task04.scss:1
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+D:/考拉sass编译器/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+D:/考拉sass编译器/bin/sass:22:in `load'
+D:/考拉sass编译器/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: main.\A        Load path: D:/vscode/code/js任务/task02/sass\A         on line 1 of D:\vscode\code\js任务\task02\sass\task04.scss\A \A 1: @import \"main\""; }

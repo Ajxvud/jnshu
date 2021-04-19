@@ -90,56 +90,100 @@ header .close::after {
 }
 
 body {
-  background: #29BDE0;
+  background: #eff0f4;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: #29bde0;
+  height: 50px;
+}
+header a {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  border-top: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+  transform: rotate(225deg);
 }
 
 main {
-  margin-top: 100px;
-  margin-left: 10%;
-  width: 80%;
-  border: 5px solid #ffffff;
-  background-color: #FFEDC5;
-}
-main div:last-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
+  margin: 70px 0 0 0;
+  padding: 0 10px;
+  text-align: center;
 }
 
-#IdentityNumber {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: white;
-  margin: -25px auto 0 auto;
-  color: #F56B81;
-  font-size: 20px;
-}
-
-#IdentityAvatar {
-  width: 150px;
-  height: 150px;
-}
-
-#IdentityStatement {
+h4 {
   margin-top: 10px;
-  font-size: 20px;
-  color: #29BDE0;
+  line-height: 40px;
+  background: #ffffff;
+}
+
+.player {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  margin-top: 10px;
+  padding-top: 10px;
+  background: #ffffff;
+}
+
+.player span {
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+.player span input {
+  width: 20px;
+  border: none;
+}
+
+.player span::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: -10px 0 0 -50px;
+  border-radius: 100%;
+  background: url(../../img/pingmin.png) no-repeat center/cover;
+}
+
+.box {
+  height: 40px;
+  margin-top: 10px;
+  background: #ffffff;
+}
+
+.quantity {
+  height: 40px;
+  margin-top: 10px;
+  padding-top: 10px;
+  background: #ffffff;
+}
+
+.quantity input {
+  width: 30px;
+  height: 20px;
+  border: none;
+  background: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  color: #fbb435;
+}
+
+.quantity span {
+  font-size: 15px;
+  color: #fbb435;
+  margin-left: 10px;
 }
 
 footer {
-  position: fixed;
-  bottom: 20px;
-  margin-left: 10%;
-  width: 80%;
+  margin: 20px 10px;
   display: flex;
   justify-content: center;
 }
 
-/*# sourceMappingURL=task02_03.css.map */
+/*# sourceMappingURL=task02_2_2.css.map */

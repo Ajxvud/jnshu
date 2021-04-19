@@ -22,13 +22,11 @@
             <div class="matchType">
                 <div class="people">
                     <div class="patternOrange"></div>
-                    <div>杀 &nbsp; 手</div>
-                    <span>1&nbsp;人</span>
+                    杀手 <span id="killer">2</span> 人
                 </div>
                 <div class="people">
                     <div class="patternBlue"></div>
-                    <div>平 &nbsp; 民</div>
-                    <span>1&nbsp;人</span>
+                    平民 <span id="civilian">9</span> 人
                 </div>
                 
             </div>
@@ -43,16 +41,16 @@
         </div>
         <div class="peopleNum">
             <form action="">
-                玩家人数<input id="peopleNum" type="text" name="num"><span>玩家数量为4-18人</span>  
+                玩家人数<input id="nm" type="text" value="11"><span>玩家数量为4-18人</span>  
             </form>
             <div class="btnBox"> 
-                <input id="btn" type="image" src="../task02/images/222_03.png" >
-                <input id="btnMiddle" type="range">
-                <input id="btn" type="image" src="../task02/images/task02_plus.png">
+                <input id="btnLess" type="image" src="../task02/images/222_03.png" >
+                <input id="btnMiddle" type="range" min="4" max="18" step="1" >
+                <input id="btnPlus" type="image" src="../task02/images/task02_plus.png" >
             </div>
         </div>
         <div class="brand">
-            <button>去发牌</button>
+            <button id="footButton">去发牌</button>
         </div>
     </div>
 </body>

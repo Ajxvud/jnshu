@@ -28,6 +28,10 @@ $border-style:1px solid #D8D8D8;
     margin: 0;
     padding: 0;
 }
+@mixin btn {
+    width: 17px;
+    height: 17px;
+}
 body{
     width: 600px;
     margin: 0 auto;
@@ -85,6 +89,11 @@ header{
                 align-items: center;
                 color: #9F9F9F;
                 @include fz20();
+                input{
+                    @include btn();
+                    outline:none;
+                    border: 0px;
+                }
                 .patternOrange{
                     @include po();
                 }
@@ -142,6 +151,11 @@ header{
                 color: #E5B047;
                 @include fz20();
             }
+            input::-webkit-input-placeholder {
+                /* placeholder颜色 */
+                color: #E5B047;
+            }
+
             span{
                 color: #E5B047;
                 font-size: 16px;
@@ -152,19 +166,21 @@ header{
             justify-content: center;
             align-items: center;
             margin: 5% 0;
-            #btn{
-                width: 17px;
-                height: 17px; 
+            #btnLess{
+                @include btn();
             }
             #btnMiddle{
                 -webkit-appearance: none;/*清除系统默认样式*/
-                background-color: #fab344;
+                background-color: #ebeff4;
                 outline: none;
                 cursor: pointer;
                 border-radius: 5px;
                 width: 70%;
                 height: 5px;
-                margin: 0 3%;
+                margin: 0 3%; 
+            }
+            #btnLess{
+                @include btn();
             }
             /*拖动块的样式*/
             input[type=range]::-webkit-slider-thumb {
@@ -177,6 +193,11 @@ header{
                 background-position-x: -3px;
                 cursor: pointer;
             }
+            /* 去掉获取焦点时的边框 */
+            input[type=range]:focus {
+                outline: none; 
+            }
+           
         }
     }
     .brand{

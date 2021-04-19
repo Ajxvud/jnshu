@@ -68,6 +68,12 @@ header img {
   color: #9F9F9F;
   font-size: 20px;
 }
+.main .matchBox .matchType .people input {
+  width: 17px;
+  height: 17px;
+  outline: none;
+  border: 0px;
+}
 .main .matchBox .matchType .people .patternOrange {
   width: 10px;
   height: 10px;
@@ -129,6 +135,10 @@ header img {
   color: #E5B047;
   font-size: 20px;
 }
+.main .peopleNum form input::-webkit-input-placeholder {
+  /* placeholder颜色 */
+  color: #E5B047;
+}
 .main .peopleNum form span {
   color: #E5B047;
   font-size: 16px;
@@ -139,21 +149,26 @@ header img {
   align-items: center;
   margin: 5% 0;
   /*拖动块的样式*/
+  /* 去掉获取焦点时的边框 */
 }
-.main .peopleNum .btnBox #btn {
+.main .peopleNum .btnBox #btnLess {
   width: 17px;
   height: 17px;
 }
 .main .peopleNum .btnBox #btnMiddle {
   -webkit-appearance: none;
   /*清除系统默认样式*/
-  background-color: #fab344;
+  background-color: #ebeff4;
   outline: none;
   cursor: pointer;
   border-radius: 5px;
   width: 70%;
   height: 5px;
   margin: 0 3%;
+}
+.main .peopleNum .btnBox #btnLess {
+  width: 17px;
+  height: 17px;
 }
 .main .peopleNum .btnBox input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -165,6 +180,9 @@ header img {
   background: url(../images/11.png) no-repeat;
   background-position-x: -3px;
   cursor: pointer;
+}
+.main .peopleNum .btnBox input[type=range]:focus {
+  outline: none;
 }
 .main .brand {
   width: 96%;
