@@ -1,0 +1,54 @@
+@import "mian";
+//元素水平垂直居中
+@mixin f-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+//盒子居中
+@mixin box-center {
+    width: 98%;
+    margin-left: 1%;
+}
+
+body{
+    background-color: #F0F0F0;
+}
+.day{
+    @include f-center();
+    background-color: white;
+    margin-top: 65px;
+    color: #29BDE0;
+    padding: 1vw;
+    @include box-center();
+    font-weight: 700;
+}
+.content{
+    @include box-center();
+    background-color: white;
+    .contentBox{
+        width: 85%;
+        background-color: #24A6C6;
+        color: white;
+        text-align: center;
+    }
+}
+footer{
+    @include f-center();
+    width: 100%;
+    background-color: #29BDE0;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-around;
+    z-index: 1;
+    .btn{
+        @include f-center();
+        width: 45%;
+        height: 65%;
+        color: white;
+        background-color: #FBB436;
+        border-radius: 5px;
+        font-size: 22px;
+    }
+}

@@ -12,14 +12,6 @@ $("#off").click(function(){
 var SS = JSON.parse(sessionStorage.getItem("key"))
 console.log(SS);
 
-//用jq找到对应元素节点
-var careerElement = $("#career");
-var numberElement = $("#number");
-var mainBoxElement = $("mainBox");
-//初始化
-
-/* console.log(SS.length); */
-
 for(var i=0; i<SS.length;i++){
     var num = i+1;
     //var个变量存储写进文档的标签代码，记住要转义字符
@@ -38,6 +30,6 @@ for(var i=0; i<SS.length;i++){
 //底部按钮跳转到下一个页面
 $(".foot-button").click(function(){
     //下一个页面没做好，暂时代替一下
-    location.href = "https://www.baidu.com/";
+    location.href = "../task02/task02_05.html";
 })
 
