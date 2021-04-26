@@ -91,31 +91,125 @@ header .close::after {
 
 body {
   background-color: #F0F0F0;
+  min-width: 600px;
 }
 
 .day {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 98%;
+  margin-left: 1%;
   background-color: white;
   margin-top: 65px;
   color: #29BDE0;
   padding: 1vw;
-  width: 98%;
-  margin-left: 1%;
   font-weight: 700;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid white;
+  margin: 1% auto 0;
 }
 
 .content {
   width: 98%;
   margin-left: 1%;
   background-color: white;
+  overflow: hidden;
+  position: relative;
 }
-.content .contentBox {
-  width: 85%;
-  background-color: #24A6C6;
-  color: white;
+.content ul .bar {
+  position: absolute;
+  top: 22%;
+  left: 10%;
+  height: 53%;
+  width: 3px;
+  background: #C9C9C9;
+}
+.content ul .bar .sun {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #c9c9c9;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+}
+.content ul .bar .sun img {
+  width: 30px;
+  height: 30px;
+}
+.content ul .bar .moon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #c9c9c9;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  top: 60%;
+}
+.content ul .bar .moon img {
+  width: 20px;
+  height: 20px;
+}
+.content ul .liTop {
+  line-height: 40px;
+  background-color: #29bedf;
+  width: 70%;
+  float: right;
   text-align: center;
+  color: white;
+  margin-right: 10%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.content ul .liTop .stpeOne {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 29px solid #29bedf;
+  position: absolute;
+  left: -27px;
+  top: 8px;
+}
+.content ul .liBottom {
+  line-height: 40px;
+  background-color: #29bedf;
+  width: 70%;
+  float: right;
+  text-align: center;
+  color: white;
+  margin-right: 10%;
+  margin-bottom: 40px;
+  position: relative;
+  cursor: pointer;
+}
+.content ul .liBottom .stpeTwo {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 29px solid #29bedf;
+  position: absolute;
+  left: -27px;
+  top: 8px;
 }
 
 footer {
@@ -130,7 +224,18 @@ footer {
   justify-content: space-around;
   z-index: 1;
 }
-footer .btn {
+footer .btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 65%;
+  color: white;
+  background-color: #FBB436;
+  border-radius: 5px;
+  font-size: 22px;
+}
+footer .btn2 {
   display: flex;
   justify-content: center;
   align-items: center;

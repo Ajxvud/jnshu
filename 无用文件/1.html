@@ -1,53 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>test</title>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
+      *{
+        display: inline-block;
         
-        .wrap {
-            position: absolute;
-            margin: auto;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: auto;
-            font-size: 0;
-        }
-        
-        .wrap div {
-            display: inline-block;
-            margin: 1%;
-            width: 30%;
-            height: 0;
-            font-size: 0;
-            padding-bottom: 30%;
-            background-color: orange;
-            border-radius: 5%;
-        }
+      }
     </style>
 </head>
-
 <body>
-    <div class="wrap">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <div id="test" data-html="我是谁"></div>
 </body>
+<script>
+  var test= document.getElementById("test");
 
+test.setAttribute("data-html", "我是你");
+</script>
 </html>

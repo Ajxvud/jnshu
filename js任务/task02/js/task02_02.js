@@ -40,7 +40,7 @@ playerElement.bind('input propertychange',function(){
     matching();
 })
 
-
+document.getElementsByClassName
 
 //主要判断函数
 function matching() {

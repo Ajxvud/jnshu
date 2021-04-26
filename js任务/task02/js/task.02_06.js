@@ -32,3 +32,5 @@ $(".foot-button").click(function(){
     location.href = "../task02/task02_05.html";
 })
 
+var myArray = new Array()
+

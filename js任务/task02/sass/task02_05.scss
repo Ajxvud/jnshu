@@ -10,29 +10,131 @@
     width: 98%;
     margin-left: 1%;
 }
-
+//边框样式
+@mixin border-style {
+    border: 1px solid #C9C9C9;
+}
+//li通用样式
+@mixin l-style {
+    line-height: 40px;
+    background-color: #29bedf;
+    width: 70%;
+    float: right;
+    text-align: center;
+    color: white;
+    margin-right: 10%;
+}
+//三角形样式
+@mixin triangle-style {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 29px solid #29bedf;
+    position: absolute;
+    left: -27px;
+    top: 8px;
+}
+@mixin btn {
+    width: 45%;
+    height: 65%;
+    color: white;
+    background-color: #FBB436;
+    border-radius: 5px;
+    font-size: 22px;
+}
 body{
     background-color: #F0F0F0;
+    min-width: 600px;
 }
 .day{
     @include f-center();
+    @include box-center();
     background-color: white;
     margin-top: 65px;
     color: #29BDE0;
     padding: 1vw;
-    @include box-center();
     font-weight: 700;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-right:20px solid transparent;
+    border-left:20px solid transparent;
+    border-bottom:20px solid white;
+    margin: 1% auto 0; 
+
 }
 .content{
     @include box-center();
+    
     background-color: white;
-    .contentBox{
-        width: 85%;
-        background-color: #24A6C6;
-        color: white;
-        text-align: center;
+    overflow: hidden;
+    position: relative;
+    ul{
+        .bar{
+            position: absolute;
+            top: 22%;
+            left: 10%;
+            height: 53%;
+            width: 3px;
+            background: #C9C9C9;
+            .sun{
+                @include f-center();
+                margin-left: -18px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid #c9c9c9;
+                background-color: white;
+                z-index: 1;
+                position: absolute;
+                
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .moon{
+                @include f-center();
+                margin-left: -18px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid #c9c9c9;
+                background-color: white;
+                z-index: 1;
+                position: absolute;
+                top: 60%;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        .liTop{
+            @include l-style();
+            margin-top: 40px;
+            margin-bottom: 20px; 
+            position: relative;
+            cursor: pointer;
+            .stpeOne{
+                @include triangle-style();
+            }
+        }
+        .liBottom{
+            @include l-style();
+            margin-bottom: 40px;
+            position: relative;
+            cursor: pointer;
+            .stpeTwo{
+                @include triangle-style();
+            }
+        }
     }
 }
+    
+
 footer{
     @include f-center();
     width: 100%;
@@ -42,13 +144,12 @@ footer{
     bottom: 0;
     justify-content: space-around;
     z-index: 1;
-    .btn{
+    .btn1{
         @include f-center();
-        width: 45%;
-        height: 65%;
-        color: white;
-        background-color: #FBB436;
-        border-radius: 5px;
-        font-size: 22px;
+        @include btn();    
+    }
+    .btn2{
+        @include f-center();
+        @include btn();
     }
 }
